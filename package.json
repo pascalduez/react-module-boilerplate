@@ -35,7 +35,7 @@
   "jest": {
     "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js",
     "collectCoverageFrom": [
-      "src/*.js"
+      "src/**/*.js"
     ]
   },
   "dependencies": {
