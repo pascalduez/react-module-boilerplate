@@ -1,0 +1,10 @@
+exports[`<Header> should render the default markup [snapshot] 1`] = `
+<header
+  className="Header-root_O9oW9"
+  role="banner">
+  <h1
+    className="Header-title_3Wcfe">
+    test
+  </h1>
+</header>
+`;

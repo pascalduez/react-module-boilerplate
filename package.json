@@ -1,0 +1,69 @@
+{
+  "name": "react-testing-sample-sample",
+  "version": "0.1.0",
+  "description": "Sample React components testing environment.",
+  "author": {
+    "name": "Pascal Duez",
+    "url": "https://github.com/pascalduez"
+  },
+  "homepage": "https://github.com/pascalduez/react-testing-sample",
+  "bugs": "https://github.com/pascalduez/react-testing-sample/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pascalduez/react-testing-sample.git"
+  },
+  "license": "Unlicense",
+  "files": [
+    "dist",
+    "index.js",
+    "README.md",
+    "UNLICENSE"
+  ],
+  "scripts": {
+    "lint:css": "stylelint ./src/**/*.css",
+    "lint:js": "eslint ./src/**/*.js",
+    "lint": "npm run lint:js && npm run lint:css",
+    "flow": "flow check",
+    "validate": "npm run flow && npm run lint",
+    "test": "jest",
+    "watch:test": "jest --watch",
+    "coverage": "jest --coverage",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && babel ./src -d ./dist --ignore '*.test.js, *.types.js'",
+    "prepublish": "npm run build"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js",
+    "collectCoverageFrom": [
+      "src/*.js"
+    ]
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-css-modules-transform": "^1.1.0",
+    "babel-plugin-transform-flow-strip-types": "^6.14.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.1.18",
+    "enzyme": "^2.4.1",
+    "enzyme-to-json": "^1.1.1",
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-flowtype": "^2.19.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "flow-bin": "^0.32.0",
+    "jasmine-enzyme": "^1.2.0",
+    "jest-cli": "^15.1.1",
+    "react-addons-test-utils": "^15.3.2",
+    "stylelint": "^7.3.1",
+    "stylelint-config-css-modules": "^0.1.0",
+    "stylelint-config-standard": "^13.0.2"
+  }
+}

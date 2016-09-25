@@ -1,0 +1,10 @@
+{
+  "presets": ["es2015", "stage-0", "react"],
+  "plugins": [
+    "transform-flow-strip-types",
+    ["css-modules-transform", {
+      "generateScopedName": "[name]-[local]_[hash:base64:5]",
+      "extractCss": "./dist/stylesheets/local.css"
+    }]
+  ]
+}
