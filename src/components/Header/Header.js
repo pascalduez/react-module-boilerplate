@@ -2,7 +2,7 @@
 
 import React, { PropTypes } from 'react';
 
-import type { HeaderProps } from './Header.types';
+import type { HeaderProps } from './Header.type';
 import styles from './Header.css';
 
 

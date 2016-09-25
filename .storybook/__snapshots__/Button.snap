@@ -1,0 +1,13 @@
+exports[`label property`] = `
+<button
+  className="Button-root_1Z5Y8 Button-primary_1gH9y">
+  Hello
+</button>
+`;
+
+exports[`type property`] = `
+<button
+  className="Button-root_1Z5Y8 Button-primary_1gH9y">
+  Hello
+</button>
+`;

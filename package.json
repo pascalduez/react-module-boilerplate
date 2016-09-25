@@ -28,19 +28,21 @@
     "test": "jest",
     "watch:test": "jest --watch",
     "coverage": "jest --coverage",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook --dont-track -p 9001 -c .storybook",
     "test:storybook": "storyshots",
     "clean": "rm -rf ./dist",
-    "build": "npm run clean && babel ./src -d ./dist --ignore '*.test.js, *.types.js'",
+    "build": "npm run clean && babel ./src -d ./dist --ignore '*.test.js,*.type.js,*.stories.js'",
     "prepublish": "npm run build"
   },
   "jest": {
+    "testPathDirs": ["./src"],
     "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js",
     "collectCoverageFrom": [
       "src/**/*.js"
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
