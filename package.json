@@ -28,6 +28,8 @@
     "test": "jest",
     "watch:test": "jest --watch",
     "coverage": "jest --coverage",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test:storybook": "storyshots",
     "clean": "rm -rf ./dist",
     "build": "npm run clean && babel ./src -d ./dist --ignore '*.test.js, *.types.js'",
     "prepublish": "npm run build"
@@ -43,6 +45,9 @@
     "react-dom": "^15.3.2"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.18.1",
+    "@kadira/storybook-addon-knobs": "^1.2.2",
+    "@kadira/storyshots": "^1.0.5",
     "babel-cli": "^6.11.4",
     "babel-eslint": "^6.1.2",
     "babel-plugin-css-modules-transform": "^1.1.0",

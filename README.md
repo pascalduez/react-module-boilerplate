@@ -1,8 +1,9 @@
 # react-testing-sample
 
-> [WIP] Sample React components testing environment.
+> [WIP] Sample React components package.  
+> Full testing and development environment.
 
-React components testing with:
+React components testing with:v
 - jest
 - enzyme
 - jasmine-enzyme
@@ -13,4 +14,7 @@ React components testing with:
 - eslint
 - flow
 - stylelint
+- ...
+- storybook
+- storyshots
 - ...
