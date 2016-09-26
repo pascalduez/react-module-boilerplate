@@ -45,8 +45,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react": "^15.3.2"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.18.1",
@@ -75,5 +74,9 @@
     "stylelint": "^7.3.1",
     "stylelint-config-css-modules": "^0.1.0",
     "stylelint-config-standard": "^13.0.2"
-  }
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.3.2"
+  },
 }
