@@ -13,6 +13,7 @@ describe('<Button>', () => {
     );
 
     expect(wrapper).toHaveTagName('button');
+    expect(wrapper).toHaveText('test');
   });
 
   it('should render the default classes', () => {

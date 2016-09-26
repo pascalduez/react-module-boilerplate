@@ -4,7 +4,8 @@
     "transform-flow-strip-types",
     ["css-modules-transform", {
       "generateScopedName": "[name]-[local]_[hash:base64:5]",
-      "extractCss": "./dist/stylesheets/local.css"
+      "extractCss": "./dist/stylesheets/local.css",
+      "append": ["autoprefixer"]
     }]
   ]
 }

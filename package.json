@@ -35,7 +35,9 @@
     "prepublish": "npm run build"
   },
   "jest": {
-    "testPathDirs": ["./src"],
+    "testPathDirs": [
+      "./src"
+    ],
     "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js",
     "collectCoverageFrom": [
       "src/**/*.js"
@@ -50,6 +52,7 @@
     "@kadira/storybook": "^2.18.1",
     "@kadira/storybook-addon-knobs": "^1.2.2",
     "@kadira/storyshots": "^1.0.5",
+    "autoprefixer": "^6.4.1",
     "babel-cli": "^6.11.4",
     "babel-eslint": "^6.1.2",
     "babel-plugin-css-modules-transform": "^1.1.0",
