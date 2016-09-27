@@ -1,16 +1,16 @@
 {
-  "name": "react-testing-sample-sample",
+  "name": "react-module-boilerplate",
   "version": "0.1.0",
   "description": "Sample React components testing environment.",
   "author": {
     "name": "Pascal Duez",
     "url": "https://github.com/pascalduez"
   },
-  "homepage": "https://github.com/pascalduez/react-testing-sample",
-  "bugs": "https://github.com/pascalduez/react-testing-sample/issues",
+  "homepage": "https://github.com/pascalduez/react-module-boilerplate",
+  "bugs": "https://github.com/pascalduez/react-module-boilerplate/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pascalduez/react-testing-sample.git"
+    "url": "git://github.com/pascalduez/react-module-boilerplate.git"
   },
   "license": "Unlicense",
   "files": [
@@ -35,13 +35,9 @@
     "prepublish": "npm run build"
   },
   "jest": {
-    "testPathDirs": [
-      "./src"
-    ],
-    "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js",
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ]
+    "testPathDirs": ["./src"],
+    "collectCoverageFrom": ["src/**/*.js"],
+    "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -78,5 +74,5 @@
   "peerDependencies": {
     "classnames": "^2.2.5",
     "react": "^15.3.2"
-  },
+  }
 }

@@ -1,20 +1,23 @@
-# react-testing-sample
+# react-module-boilerplate
 
-> [WIP] Sample React components package.  
-> Full testing and development environment.
+> [WIP]  
+> Sample React presentational components package.  
 
-React components testing with:v
+Features
+- css-modules
+- babel-plugin-css-modules-transform (Webpack free)
+
+Testing with:
 - jest
 - enzyme
 - jasmine-enzyme
-- enzyme-to-json
-- ...
-- css-modules
-- babel-plugin-css-modules-transform
+- enzyme-to-json (Snapshots from Enzyme)
+- storyshots (Snapshots from stories)
+
+Code quality
 - eslint
 - flow
 - stylelint
-- ...
+
+Development environment, styleguide
 - storybook
-- storyshots
-- ...
