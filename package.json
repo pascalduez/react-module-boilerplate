@@ -36,8 +36,14 @@
     "prepublish": "npm run build"
   },
   "jest": {
-    "testPathDirs": ["src"],
-    "collectCoverageFrom": ["src/**/*.js", "!src/**/*.story.js", "!src/**/*.type.js"],
+    "testPathDirs": [
+      "src"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.story.js",
+      "!src/**/*.type.js"
+    ],
     "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js"
   },
   "dependencies": {
@@ -45,12 +51,12 @@
     "react": "^15.3.2"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.18.1",
-    "@kadira/storybook-addon-knobs": "^1.2.2",
-    "@kadira/storyshots": "^1.0.5",
+    "@kadira/storybook": "^2.20.1",
+    "@kadira/storybook-addon-knobs": "^1.2.3",
+    "@kadira/storyshots": "^1.1.1",
     "autoprefixer": "^6.4.1",
     "babel-cli": "^6.11.4",
-    "babel-eslint": "^6.1.2",
+    "babel-eslint": "^7.0.0",
     "babel-plugin-css-modules-transform": "^1.1.0",
     "babel-plugin-transform-flow-strip-types": "^6.14.0",
     "babel-preset-es2015": "^6.13.2",
