@@ -4,5 +4,5 @@
 
 export type ButtonProps = {
   label: string,
-  type?: 'primary' | 'secondary',
+  theme?: 'primary' | 'secondary' | 'danger',
 };

@@ -7,19 +7,20 @@ import Button from './Button';
 const stories = storiesOf('Button', module);
 stories.addDecorator(withKnobs);
 
-const typeOptions = {
+const themeOptions = {
   primary: 'primary',
   secondary: 'secondary',
+  danger: 'danger',
 };
 
 
 stories
   .add('label property', () => (
-    <Button label={text('Label', 'Hello')} />
+    <Button label={text('Label property', 'Hello')} />
   ))
   .add('type property', () => (
     <Button
       label="Hello"
-      type={select('Type', typeOptions, 'primary')}
+      theme={select('Theme property', themeOptions, 'primary')}
     />
   ));

@@ -7,9 +7,9 @@ import type { ButtonProps } from './Button.type';
 import styles from './Button.css';
 
 
-const Button = ({ label, type, ...extraProps }: ButtonProps) => (
+const Button = ({ label, theme, ...extraProps }: ButtonProps) => (
   <button
-    className={classNames(styles.root, styles[type])}
+    className={classNames(styles.root, styles[theme])}
     {...extraProps}
   >
     {label}
@@ -18,11 +18,11 @@ const Button = ({ label, type, ...extraProps }: ButtonProps) => (
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  theme: PropTypes.string,
 };
 
 Button.defaultProps = {
-  type: 'primary',
+  theme: 'primary',
 };
 
 
