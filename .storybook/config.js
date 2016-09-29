@@ -1,6 +1,7 @@
 import { configure } from '@kadira/storybook';
 
-// Breaks with storyshots
+// Breaks with storyshots.
+// See: https://github.com/kadirahq/storyshots/issues/19
 //
 // const req = require.context('../src/components', true, /.story.js$/);
 //
