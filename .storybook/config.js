@@ -1,17 +1,7 @@
 import { configure } from '@kadira/storybook';
 
-// Breaks with storyshots.
-// See: https://github.com/kadirahq/storyshots/issues/19
-//
-// const req = require.context('../src/components', true, /.story.js$/);
-//
-// function loadStories() {
-//   req.keys().forEach(filename => req(filename));
-// }
+const req = require.context('../src/components', true, /.story.js$/);
 
-function loadStories() {
-  require('../src/components/Header/Header.story.js');
-  require('../src/components/Button/Button.story.js');
-}
-
-configure(loadStories, module);
+configure(() => {
+  req.keys().forEach(req);
+}, module);
