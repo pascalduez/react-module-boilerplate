@@ -22,9 +22,12 @@ describe('<Button>', () => {
     );
 
     expect(wrapper).toHaveClassName(styles.root);
+    expect(wrapper).toHaveClassName(styles.primary);
   });
 
-  it('should render the default markup [snapshot]', () => {
+  // Which is equivalent to:
+
+  it('should render the default markup and classes [snapshot]', () => {
     const wrapper = shallow(
       <Button label="test" />
     );

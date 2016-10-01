@@ -26,7 +26,9 @@ describe('<Header>', () => {
     expect(wrapper.children().at(0)).toHaveClassName(styles.title);
   });
 
-  it('should render the default markup [snapshot]', () => {
+  // Which is equivalent to:
+
+  it('should render the default markup and classes [snapshot]', () => {
     const wrapper = shallow(
       <Header title="test" />
     );

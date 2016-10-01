@@ -31,7 +31,7 @@
     "storybook": "start-storybook --dont-track -p 9001 -c .storybook",
     "test:stories": "BABEL_ENV=RELEASE storyshots",
     "clean": "rm -rf ./dist",
-    "build:js": "BABEL_ENV=RELEASE babel ./src -d ./dist --ignore '*.test.js,*.type.js,*.stories.js'",
+    "build:js": "BABEL_ENV=RELEASE babel ./src -d ./dist --ignore '*.test.js,*.type.js,*.story.js'",
     "build": "npm run clean && npm run build:js",
     "prepublish": "npm run build"
   },

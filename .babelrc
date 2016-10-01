@@ -1,6 +1,12 @@
 {
-  "presets": ["es2015", "stage-0", "react"],
-  "plugins": ["transform-flow-strip-types"],
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-flow-strip-types"
+  ],
   "env": {
     "RELEASE": {
       "plugins": [

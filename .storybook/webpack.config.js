@@ -1,5 +1,4 @@
-module.exports = function (baseConfig, configType) {
-
+module.exports = (baseConfig) => {
   baseConfig.module.loaders.push({
     test: /\.css?$/,
     loaders: [
