@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import { withKnobs, text, select } from '@kadira/storybook-addon-knobs';
 
 import Button from './Button';
@@ -22,5 +22,11 @@ stories
     <Button
       label="Hello"
       theme={select('Theme property', themeOptions, 'primary')}
+    />
+  ))
+  .add('handleClick property', () => (
+    <Button
+      label="Click me!"
+      handleClick={action('Hello from click handler')}
     />
   ));

@@ -5,6 +5,10 @@
   background-color: transparent;
 }
 
+.root:hover {
+  cursor: pointer;
+}
+
 .primary {
   color: green;
 }

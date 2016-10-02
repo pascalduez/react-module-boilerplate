@@ -1,7 +1,14 @@
 import { configure } from '@kadira/storybook';
 
-const req = require.context('../src/components', true, /.story.js$/);
+// https://github.com/kadirahq/storyshots/issues/19
+//
+// const req = require.context('../src/components', true, /.story.js$/);
+//
+// configure(() => {
+//   req.keys().forEach(req);
+// }, module);
 
 configure(() => {
-  req.keys().forEach(req);
+  require('../src/components/Button/Button.story.js');
+  require('../src/components/Header/Header.story.js');
 }, module);
