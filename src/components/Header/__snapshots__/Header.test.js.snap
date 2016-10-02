@@ -1,4 +1,4 @@
-exports[`<Header> should render the default markup [snapshot] 1`] = `
+exports[`<Header> should render the default markup and classes [snapshot] 1`] = `
 <header
   className="Header-root_O9oW9"
   role="banner">

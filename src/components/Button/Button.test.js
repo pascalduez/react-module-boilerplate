@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 
 import Button from './Button';
@@ -33,5 +33,18 @@ describe('<Button>', () => {
     );
 
     expect(shallowToJson(wrapper)).toMatchSnapshot();
+  });
+
+  // Event handlers.
+
+  it('should trigger click event handlers', () => {
+    const spy = jest.fn();
+    const wrapper = mount(
+      <Button label="test" handleClick={spy} />
+    );
+
+    wrapper.simulate('click');
+
+    expect(spy).toBeCalled();
   });
 });

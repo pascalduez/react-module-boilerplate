@@ -41,6 +41,7 @@
     ],
     "collectCoverageFrom": [
       "src/**/*.js",
+      "!src/**/index.js",
       "!src/**/*.story.js",
       "!src/**/*.type.js"
     ],
