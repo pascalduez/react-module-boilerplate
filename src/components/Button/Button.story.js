@@ -29,4 +29,12 @@ stories
       label="Click me!"
       handleClick={action('Hello from click handler')}
     />
-  ));
+  ))
+  .addWithInfo(
+    'Default usage',
+    'This is the default `Button` usage, just providing a `label` property.',
+    () => (
+      <Button label="Hello!" />
+    ),
+    { inline: true }
+  );

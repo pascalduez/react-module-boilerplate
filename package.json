@@ -52,6 +52,7 @@
     "react": "^15.3.2"
   },
   "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.2.1",
     "@kadira/storybook": "^2.20.1",
     "@kadira/storybook-addon-knobs": "^1.2.3",
     "@kadira/storyshots": "^1.1.2",
