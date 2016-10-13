@@ -1,0 +1,21 @@
+exports[`with some emoji`] = `
+<header
+  className="Header-root_O9oW9"
+  role="banner">
+  <h1
+    className="Header-title_3Wcfe">
+    😀 😎
+  </h1>
+</header>
+`;
+
+exports[`with text`] = `
+<header
+  className="Header-root_O9oW9"
+  role="banner">
+  <h1
+    className="Header-title_3Wcfe">
+    Hello
+  </h1>
+</header>
+`;
