@@ -45,7 +45,7 @@
       "!src/**/*.story.js",
       "!src/**/*.type.js"
     ],
-    "setupTestFrameworkScriptFile": "node_modules/jasmine-enzyme/lib/jest.js"
+    "setupTestFrameworkScriptFile": "node_modules/jest-enzyme/lib/index.js"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -73,8 +73,8 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
     "flow-bin": "^0.33.0",
-    "jasmine-enzyme": "^1.2.0",
     "jest-cli": "^16.0.1",
+    "jest-enzyme": "^2.0.0",
     "react-addons-test-utils": "^15.3.2",
     "stylelint": "^7.4.2",
     "stylelint-config-css-modules": "^0.1.0",

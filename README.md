@@ -10,7 +10,7 @@ Features
 Testing with:
 - jest
 - enzyme
-- jasmine-enzyme
+- jest-enzyme
 - enzyme-to-json (Snapshots from Enzyme)
 - storyshots (Snapshots from stories)
 
