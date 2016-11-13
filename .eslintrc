@@ -8,6 +8,13 @@ env:
   jest: true
 
 rules:
+  comma-dangle:
+    - error
+    - arrays: "always-multiline"
+      objects: "always-multiline"
+      imports: never
+      exports: never
+      functions: ignore
   react/jsx-filename-extension:
     - error
     - extensions:
