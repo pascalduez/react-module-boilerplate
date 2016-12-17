@@ -1,9 +1,12 @@
 ---
 root: true
 parser: "babel-eslint"
-extends: "airbnb"
+extends:
+  - "airbnb"
+  - "plugin:css-modules/recommended"
 plugins:
   - "flowtype"
+  - "css-modules"
 env:
   jest: true
 
