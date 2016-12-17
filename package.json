@@ -31,7 +31,8 @@
     "test:stories": "BABEL_ENV=RELEASE storyshots -x '\\[doc\\]'",
     "clean": "rm -rf ./dist",
     "build:js": "BABEL_ENV=RELEASE babel ./src -d ./dist --ignore '*.test.js,*.type.js,*.story.js'",
-    "build": "npm run clean && npm run build:js",
+    "build:flow": "flow-copy-source -v -i '**/*.test.js' -i '**/*.story.js' ./src ./dist",
+    "build": "npm run clean && npm run build:js && npm run build:flow",
     "prepublish": "npm run build"
   },
   "jest": {
@@ -71,6 +72,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "flow-bin": "^0.37.0",
+    "flow-copy-source": "^1.1.0",
     "jasmine-reporters": "^2.2.0",
     "jest": "^18.0.0",
     "jest-cli": "^17.0.3",
