@@ -10,13 +10,13 @@
 }
 
 .primary {
-  color: green;
+  color: var(--color-primary);
 }
 
 .secondary {
-  color: blue;
+  color: var(--color-secondary);
 }
 
 .danger {
-  color: red;
+  color: var(--color-danger);
 }
