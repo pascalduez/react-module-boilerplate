@@ -1,4 +1,5 @@
 // @flow
+/* eslint css-modules/no-unused-class: [2, { markAsUsed: ['primary', 'secondary', 'danger'] }] */
 
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';

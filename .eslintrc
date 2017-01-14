@@ -18,6 +18,7 @@ rules:
       imports: never
       exports: never
       functions: ignore
+  react/require-default-props: off
   react/jsx-filename-extension:
     - error
     - extensions:
