@@ -2,11 +2,14 @@
 
 import React, { PropTypes } from 'react';
 
-import type { HeaderProps } from './Header.type';
 import styles from './Header.css';
 
+export type Props = {
+  title: string,
+};
 
-const Header = ({ title, ...extraProps }: HeaderProps) => (
+
+const Header = ({ title, ...extraProps }: Props) => (
   <header
     role="banner"
     className={styles.root}

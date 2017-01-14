@@ -4,11 +4,16 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-import type { ButtonProps } from './Button.type';
 import styles from './Button.css';
 
+export type Props = {
+  label: string,
+  theme?: 'primary' | 'secondary' | 'danger',
+  handleClick?: () => void,
+};
 
-const Button = ({ label, theme, handleClick, ...extraProps }: ButtonProps) => (
+
+const Button = ({ label, theme, handleClick, ...extraProps }: Props) => (
   <button
     className={classNames(styles.root, styles[theme])}
     onClick={handleClick}
