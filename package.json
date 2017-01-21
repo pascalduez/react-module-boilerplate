@@ -44,7 +44,8 @@
       "!src/**/index.js",
       "!src/**/*.story.js"
     ],
-    "setupTestFrameworkScriptFile": "./scripts/setupTests.js"
+    "setupTestFrameworkScriptFile": "./scripts/setupTests.js",
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   },
   "dependencies": {},
   "devDependencies": {

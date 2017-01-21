@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
 
 import Header from './Header';
 import styles from './Header.css';
@@ -33,6 +32,6 @@ describe('<Header>', () => {
       <Header title="test" />
     );
 
-    expect(shallowToJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

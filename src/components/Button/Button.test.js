@@ -1,7 +1,6 @@
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['secondary', 'danger'] }] */
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
 
 import Button from './Button';
 import styles from './Button.css';
@@ -33,7 +32,7 @@ describe('<Button>', () => {
       <Button label="test" />
     );
 
-    expect(shallowToJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   // Event handlers.
