@@ -23,7 +23,7 @@
     "lint:css": "stylelint ./src/**/*.css",
     "lint:js": "eslint ./src/**/*.js",
     "lint": "npm run lint:js && npm run lint:css",
-    "typecheck": "flow check",
+    "typecheck": "flow check ./src",
     "validate": "npm run typecheck && npm run lint",
     "test": "BABEL_ENV=RELEASE jest",
     "test:ci": "NODE_ENV=CI npm test -- --coverage",

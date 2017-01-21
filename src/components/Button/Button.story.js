@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import { withKnobs, text, select } from '@kadira/storybook-addon-knobs';
