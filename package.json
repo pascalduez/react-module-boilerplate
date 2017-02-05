@@ -26,7 +26,7 @@
     "typecheck": "flow check ./src",
     "validate": "npm run typecheck && npm run lint",
     "test": "BABEL_ENV=RELEASE jest",
-    "test:ci": "NODE_ENV=CI npm test -- --coverage",
+    "test:ci": "NODE_ENV=CI npm test -- --runInBand --coverage",
     "storybook": "start-storybook --dont-track -p 9001 -c .storybook",
     "test:stories": "BABEL_ENV=RELEASE storyshots -x '\\[doc\\]'",
     "clean": "rm -rf ./dist",
