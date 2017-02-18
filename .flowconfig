@@ -1,9 +1,9 @@
 [ignore]
-.*node_modules/fbjs.*
-.*node_modules/jest-enzyme.*
-.*node_modules/enzyme-matchers.*
-.*node_modules/stylelint.*
-.*dist.*
+<PROJECT_ROOT>/node_modules/fbjs
+<PROJECT_ROOT>/node_modules/jest-enzyme
+<PROJECT_ROOT>/node_modules/enzyme-matchers
+<PROJECT_ROOT>/node_modules/stylelint
+<PROJECT_ROOT>/dist
 
 [include]
 
