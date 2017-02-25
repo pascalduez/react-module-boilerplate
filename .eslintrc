@@ -3,10 +3,13 @@ root: true
 parser: "babel-eslint"
 extends:
   - "airbnb"
+  - "plugin:flowtype/recommended"
   - "plugin:css-modules/recommended"
+
 plugins:
   - "flowtype"
   - "css-modules"
+
 env:
   jest: true
 
@@ -18,12 +21,14 @@ rules:
       imports: never
       exports: never
       functions: ignore
+
   react/require-default-props: off
   react/jsx-filename-extension:
     - error
     - extensions:
       - ".js"
       - ".jsx"
+
   import/no-extraneous-dependencies:
     - error
     - devDependencies: true
