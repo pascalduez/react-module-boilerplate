@@ -36,7 +36,7 @@
     "prepublish": "npm run build"
   },
   "jest": {
-    "testPathDirs": [
+    "roots": [
       "src"
     ],
     "collectCoverageFrom": [

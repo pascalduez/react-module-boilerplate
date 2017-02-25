@@ -1,9 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Header> should render the default markup and classes [snapshot] 1`] = `
 <header
   className="Header-root_O9oW9"
-  role="banner">
+  role="banner"
+>
   <h1
-    className="Header-title_3Wcfe">
+    className="Header-title_3Wcfe"
+  >
     test
   </h1>
 </header>
