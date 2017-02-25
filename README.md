@@ -12,7 +12,6 @@ Testing with:
 - enzyme
 - jest-enzyme
 - enzyme-to-json (Snapshots from Enzyme)
-- storyshots (Snapshots from stories)
 
 Code quality
 - eslint

@@ -33,7 +33,7 @@ stories
     />
   ))
   .addWithInfo(
-    '[doc] Default usage',
+    'Default usage',
     'This is the default `Button` usage, just providing a `label` property.',
     () => (
       <Button label="Hello!" />
