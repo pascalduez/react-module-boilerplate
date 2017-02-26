@@ -30,8 +30,9 @@
     "storybook": "start-storybook --dont-track -p 9001 -c .storybook",
     "clean": "rm -rf ./dist",
     "build:js": "BABEL_ENV=RELEASE babel ./src -d ./dist --ignore '*.test.js,*.story.js'",
+    "build:css": "cat ./dist/stylesheets/local/*.css >> ./dist/stylesheets/local.css",
     "build:flow": "flow-copy-source -v -i '**/*.test.js' -i '**/*.story.js' ./src ./dist",
-    "build": "npm run clean && npm run build:js && npm run build:flow",
+    "build": "npm run clean && npm run build:js && npm run build:css && npm run build:flow",
     "prepublish": "npm run build"
   },
   "jest": {

@@ -17,11 +17,15 @@
       "plugins": [
         ["css-modules-transform", {
           "generateScopedName": "[name]-[local]_[hash:base64:5]",
-          "extractCss": "./dist/stylesheets/local.css",
           "append": [
             "./src/theme",
             "autoprefixer"
-          ]
+          ],
+          "extractCss":  {
+            "dir": "./dist/stylesheets/local",
+            "relativeRoot": "./src/",
+            "filename": "[name].css"
+          }
         }]
       ]
     }
