@@ -30,6 +30,7 @@ Unit Testing
 Code Quality
  * eslint
  * flow
+ * flow-coverage-report
  * stylelint
 
 Development environment, styleguide
