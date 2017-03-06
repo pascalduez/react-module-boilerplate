@@ -1,6 +1,6 @@
 // @flow
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 import styles from './Header.css';
 
@@ -20,10 +20,6 @@ const Header = ({ title, ...extraProps }: Props) => (
     </h1>
   </header>
 );
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 
 export default Header;

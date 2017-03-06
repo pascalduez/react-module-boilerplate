@@ -1,7 +1,7 @@
 // @flow
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['primary', 'secondary', 'danger'] }] */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
 import styles from './Button.css';
@@ -22,12 +22,6 @@ const Button = ({ label, theme, handleClick, ...extraProps }: Props) => (
     {label}
   </button>
 );
-
-Button.propTypes = {
-  label: PropTypes.string.isRequired,
-  theme: PropTypes.string,
-  handleClick: PropTypes.func,
-};
 
 Button.defaultProps = {
   theme: 'primary',
