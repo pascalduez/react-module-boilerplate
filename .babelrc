@@ -5,12 +5,12 @@
         "browsers": ["last 2 versions", "> 1%"],
         "node": "current"
       },
-      "debug": true
     }],
-    "react"
+    "react",
   ],
   "plugins": [
     "transform-object-rest-spread",
+    "transform-do-expressions",
   ],
   "env": {
     "RELEASE": {
@@ -19,15 +19,15 @@
           "generateScopedName": "[name]-[local]_[hash:base64:5]",
           "append": [
             "./src/theme",
-            "autoprefixer"
+            "autoprefixer",
           ],
           "extractCss":  {
             "dir": "./dist/stylesheets/local",
             "relativeRoot": "./src/",
-            "filename": "[name].css"
-          }
-        }]
-      ]
-    }
-  }
+            "filename": "[name].css",
+          },
+        }],
+      ],
+    },
+  },
 }
