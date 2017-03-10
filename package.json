@@ -22,10 +22,10 @@
   "scripts": {
     "lint:css": "stylelint ./src/**/*.css",
     "lint:js": "eslint ./src/**/*.js",
-    "lint": "npm-run-all lint:*",
+    "lint": "run-s lint:*",
     "typecheck": "flow check ./src",
     "typecheck:coverage": "flow-coverage-report -t text -t html -i './src/**/*.js' -x './src/**/*.spec.js' -x './src/**/*.story.js'",
-    "validate": "npm-run-all lint typecheck",
+    "validate": "run-s lint typecheck",
     "test": "BABEL_ENV=RELEASE jest",
     "test:ci": "NODE_ENV=CI npm test -- --runInBand --coverage",
     "storybook": "start-storybook --dont-track -p 9001 -c .storybook",
@@ -33,8 +33,8 @@
     "build:js": "BABEL_ENV=RELEASE babel ./src -d ./dist --ignore '*.spec.js,*.story.js'",
     "build:css": "cat ./dist/stylesheets/local/*.css >> ./dist/stylesheets/local.css",
     "build:flow": "flow-copy-source -v -i '**/*.spec.js' -i '**/*.story.js' ./src ./dist",
-    "build": "npm-run-all clean build:*",
-    "prepublish": "npm run build"
+    "build": "run-s clean build:*",
+    "prepublish": "run-s build"
   },
   "jest": {
     "roots": [
