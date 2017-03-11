@@ -8,7 +8,7 @@ import styles from './Button.css';
 
 export type Props = {
   label: string,
-  theme?: 'primary' | 'secondary' | 'danger',
+  theme: 'primary' | 'secondary' | 'danger',
   handleClick?: () => void,
 };
 

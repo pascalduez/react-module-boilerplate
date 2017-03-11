@@ -3,11 +3,16 @@
 <PROJECT_ROOT>/node_modules/jest-enzyme
 <PROJECT_ROOT>/node_modules/enzyme-matchers
 <PROJECT_ROOT>/node_modules/stylelint
+<PROJECT_ROOT>/node_modules/flow-coverage-report
 <PROJECT_ROOT>/dist
 
 [include]
 
 [libs]
+flow-typed
 
 [options]
 esproposal.class_static_fields=enable
+module.file_ext=.js
+module.file_ext=.css
+module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/interfaces/CSSModule.js.flow'
