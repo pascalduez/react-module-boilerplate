@@ -19,6 +19,7 @@
     "README.md",
     "UNLICENSE"
   ],
+  "main": "dist/index.js",
   "scripts": {
     "lint:css": "stylelint src/**/*.css",
     "lint:js": "eslint src/",
