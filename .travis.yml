@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - '4'
+  - '6'
+  - 'stable'
+
+sudo: false
+
+git:
+  depth: 10
+
+script: yarn run test:ci
+
+cache:
+  yarn: true
+  directories:
+    - node_modules

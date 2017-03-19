@@ -1,5 +1,7 @@
 # react-module-boilerplate
 
+[![Build Status][travis-image]][travis-url]
+
 > Sample React presentational components package.  
 
 ## About
@@ -35,3 +37,7 @@ Code Quality
 
 Development environment, styleguide
  * storybook
+
+
+[travis-url]: https://travis-ci.org/pascalduez/react-module-boilerplate?branch=master
+[travis-image]: http://img.shields.io/travis/pascalduez/react-module-boilerplate.svg?style=flat-square
