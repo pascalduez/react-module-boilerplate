@@ -2,6 +2,16 @@
   "name": "react-module-boilerplate",
   "version": "0.1.0",
   "description": "Sample React components testing environment.",
+  "keywords": [
+    "react",
+    "component",
+    "boilerplate",
+    "ui",
+    "system",
+    "css-modules",
+    "styleguide",
+    "snapshot"
+  ],
   "author": {
     "name": "Pascal Duez",
     "url": "https://github.com/pascalduez"
