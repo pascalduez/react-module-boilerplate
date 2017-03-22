@@ -57,10 +57,7 @@
       "!src/**/index.js",
       "!src/**/*.story.js"
     ],
-    "setupTestFrameworkScriptFile": "./scripts/setupTests.js",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+    "setupTestFrameworkScriptFile": "./scripts/setupTests.js"
   },
   "dependencies": {},
   "devDependencies": {
@@ -78,7 +75,6 @@
     "ci-info": "^1.0.0",
     "classnames": "^2.2.5",
     "enzyme": "^2.7.1",
-    "enzyme-to-json": "^1.4.5",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-css-modules": "^2.7.1",
