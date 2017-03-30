@@ -74,7 +74,7 @@
     "babel-preset-react": "^6.23.0",
     "ci-info": "^1.0.0",
     "classnames": "^2.2.5",
-    "enzyme": "^2.7.1",
+    "enzyme": "^2.8.0",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-css-modules": "^2.7.1",
