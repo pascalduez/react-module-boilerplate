@@ -15,4 +15,4 @@ flow-typed
 esproposal.class_static_fields=enable
 module.file_ext=.js
 module.file_ext=.css
-module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/interfaces/CSSModule.js.flow'
+module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/interfaces/CSSModule.js'
