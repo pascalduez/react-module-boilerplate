@@ -1,5 +1,5 @@
-// @flow
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['secondary', 'danger'] }] */
+
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
