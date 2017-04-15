@@ -12,8 +12,8 @@ describe('<Header>', () => {
     );
 
     expect(wrapper).toHaveTagName('header');
-    expect(wrapper.children().at(0)).toHaveTagName('h1');
-    expect(wrapper.children().at(0)).toHaveText('test');
+    expect(wrapper.childAt(0)).toHaveTagName('h1');
+    expect(wrapper.childAt(0)).toHaveText('test');
   });
 
   it('should render the default classes', () => {
@@ -22,7 +22,7 @@ describe('<Header>', () => {
     );
 
     expect(wrapper).toHaveClassName(styles.root);
-    expect(wrapper.children().at(0)).toHaveClassName(styles.title);
+    expect(wrapper.childAt(0)).toHaveClassName(styles.title);
   });
 
   // Which is equivalent to:
