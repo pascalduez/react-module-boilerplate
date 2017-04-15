@@ -1,7 +1,7 @@
 {
   "name": "react-module-boilerplate",
   "version": "0.1.0",
-  "description": "Sample React components testing environment.",
+  "description": "Sample React presentational components package",
   "keywords": [
     "react",
     "component",
