@@ -38,7 +38,7 @@
     "typecheck:coverage": "flow-coverage-report -t text -t html -i 'src/**/*.js' -x 'src/**/*.{spec,story}.js'",
     "validate": "run-s lint typecheck",
     "test": "BABEL_ENV=RELEASE jest",
-    "test:cover": "npm test -- --coverage",
+    "test:cover": "run-s 'test -- --coverage'",
     "test:ci": "run-s validate 'test -- --runInBand --coverage'",
     "styleguide": "start-storybook --dont-track -p 9001 -c .storybook",
     "clean": "rm -rf dist/",
