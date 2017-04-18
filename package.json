@@ -29,7 +29,8 @@
     "README.md",
     "UNLICENSE"
   ],
-  "main": "dist/index.js",
+  "main": "dist/cjsm/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "lint:css": "stylelint src/**/*.css",
     "lint:js": "eslint src/",
@@ -37,16 +38,21 @@
     "typecheck": "flow check src/",
     "typecheck:coverage": "flow-coverage-report -t text -t html -i 'src/**/*.js' -x 'src/**/*.{spec,story}.js'",
     "validate": "run-s lint typecheck",
-    "test": "BABEL_ENV=RELEASE jest",
+    "test": "BABEL_ENV=cssm jest",
     "test:cover": "run-s 'test -- --coverage'",
     "test:ci": "run-s validate 'test -- --runInBand --no-watchman --coverage'",
     "styleguide": "start-storybook --dont-track -p 9001 -c .storybook",
     "clean": "rm -rf dist/",
-    "build:js": "BABEL_ENV=RELEASE babel src/ -d dist/ --ignore '*.spec.js,*.story.js'",
+    "build:js:esm": "BABEL_ENV=esm,cssm babel src/ -d dist/esm --ignore '*.spec.js,*.story.js'",
+    "build:js:cjsm": "babel dist/esm -d dist/cjsm",
+    "build:js": "run-s build:js:*",
     "build:css": "cat dist/stylesheets/local/*.css >> dist/stylesheets/local.css",
-    "build:flow": "flow-copy-source -v -i '**/*.{story,spec}.js' src/ dist/",
+    "build:flow": "flow-copy-source -v -i '**/*.{story,spec}.js' src/ dist/cjsm",
     "build": "run-s clean build:*",
     "prepublish": "run-s validate test:cover build"
+  },
+  "babel": {
+    "presets": ["./babelrc.js"]
   },
   "jest": {
     "roots": [
