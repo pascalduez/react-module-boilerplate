@@ -16,6 +16,7 @@ Strive for keeping things simple and efficient.
 JS, ESnext
  * Babel  
  * babel-preset-env
+ * Ship both commonjs and ES2015 modules
 
 Styling
  * css-modules
