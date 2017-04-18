@@ -51,6 +51,9 @@
     "build": "run-s clean build:*",
     "prepublish": "run-s validate test:cover build"
   },
+  "babel": {
+    "presets": ["./babelrc.js"]
+  },
   "jest": {
     "roots": [
       "src"

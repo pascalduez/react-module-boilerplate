@@ -13,7 +13,7 @@ const presets = [
       browsers: ['last 2 versions', '> 1%'],
       node: 'current',
     },
-    modules: features.has('cjs') ? 'commonjs' : false,
+    modules: features.has('esm') ? false : 'commonjs',
   }],
   'react',
 ];
