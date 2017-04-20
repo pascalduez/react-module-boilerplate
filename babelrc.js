@@ -23,15 +23,23 @@ const plugins = [
   'transform-do-expressions',
 ];
 
+const cssClassPattern = features.has('globalcss')
+  ? '[name]-[local]'
+  : '[name]-[local]_[hash:base64:5]';
+
+const cssDistTarget = features.has('globalcss')
+  ? './dist/stylesheets/global'
+  : './dist/stylesheets/local';
+
 const cssmPlugin = [
   'css-modules-transform', {
-    generateScopedName: '[name]-[local]_[hash:base64:5]',
+    generateScopedName: cssClassPattern,
     append: [
       './src/theme',
       'autoprefixer',
     ],
     extractCss: {
-      dir: './dist/stylesheets/local',
+      dir: cssDistTarget,
       relativeRoot: './src/',
       filename: '[name].css',
     },

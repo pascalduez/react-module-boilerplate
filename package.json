@@ -46,9 +46,11 @@
     "build:js:esm": "BABEL_ENV=esm,cssm babel src/ -d dist/esm --ignore '*.spec.js,*.story.js'",
     "build:js:cjsm": "babel dist/esm -d dist/cjsm",
     "build:js": "run-s build:js:*",
-    "build:css": "cat dist/stylesheets/local/*.css >> dist/stylesheets/local.css",
     "build:flow": "flow-copy-source -v -i '**/*.{story,spec}.js' src/ dist/cjsm",
-    "build": "run-s clean build:*",
+    "build:css:global": "BABEL_ENV=cssm,globalcss babel src/ > /dev/null",
+    "concat:css:local": "cat dist/stylesheets/local/*.css >> dist/stylesheets/local.css",
+    "concat:css:global": "cat dist/stylesheets/global/*.css >> dist/stylesheets/global.css",
+    "build": "run-s clean build:** concat:**",
     "prepublish": "run-s validate test:cover build"
   },
   "babel": {
