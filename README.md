@@ -22,11 +22,11 @@ Styling
  * css-modules
  * babel-plugin-css-modules-transform (Webpack free)
  * PostCSS
-  * autoprefixer
-  * custom properties (theming)
+    * autoprefixer
+    * custom properties (theming)
  * Ship two stylesheets
-  * Local scoped styles (React component)
-  * Global styles (use with own markup)
+    * Local scoped styles (React component)
+    * Global styles (use with own markup)
 
 Unit Testing
  * jest
