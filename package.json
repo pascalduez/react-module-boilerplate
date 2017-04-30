@@ -94,7 +94,7 @@
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "flow-bin": "^0.44.2",
+    "flow-bin": "^0.45.0",
     "flow-copy-source": "^1.1.0",
     "flow-coverage-report": "^0.3.0",
     "jasmine-reporters": "^2.2.1",
