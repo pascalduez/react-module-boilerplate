@@ -1,7 +1,5 @@
-const env = process.env.BABEL_ENV || process.env.NODE_ENV || '';
-
-const features = {
-  list: env.split(','),
+const env = {
+  list: (process.env.BABEL_ENV || process.env.NODE_ENV || '').split(','),
   has(feature) {
     return this.list.indexOf(feature) > -1;
   },
@@ -13,7 +11,7 @@ const presets = [
       browsers: ['last 2 versions', '> 1%'],
       node: 'current',
     },
-    modules: features.has('esm') ? false : 'commonjs',
+    modules: env.has('esm') ? false : 'commonjs',
   }],
   'react',
 ];
@@ -23,11 +21,11 @@ const plugins = [
   'transform-do-expressions',
 ];
 
-const cssClassPattern = features.has('globalcss')
+const cssClassPattern = env.has('globalcss')
   ? '[name]-[local]'
   : '[name]-[local]_[hash:base64:5]';
 
-const cssDistTarget = features.has('globalcss')
+const cssDistTarget = env.has('globalcss')
   ? './dist/stylesheets/global'
   : './dist/stylesheets/local';
 
@@ -46,7 +44,7 @@ const cssmPlugin = [
   },
 ];
 
-if (features.has('cssm')) {
+if (env.has('cssm')) {
   plugins.push(cssmPlugin);
 }
 
