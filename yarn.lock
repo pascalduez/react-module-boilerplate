@@ -2127,11 +2127,7 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.2.7:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.8.tgz#b2c8a2c79bb89fbbfd3724d9555e15095b5f5fb6"
-
-electron-to-chromium@^1.3.9:
+electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.9:
   version "1.3.10"
   resolved "https://mirrors.gandi.net/npm/electron-to-chromium/-/electron-to-chromium-1.3.10.tgz#63d62b785471f0d8dda85199d64579de8a449f08"
 
@@ -3476,13 +3472,6 @@ istanbul-reports@^1.1.0:
   dependencies:
     handlebars "^4.0.3"
 
-jasmine-reporters@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/jasmine-reporters/-/jasmine-reporters-2.2.1.tgz#de9a9201367846269e7ca8adff5b44221671fcbd"
-  dependencies:
-    mkdirp "^0.5.1"
-    xmldom "^0.1.22"
-
 jest-changed-files@^20.0.1:
   version "20.0.1"
   resolved "https://mirrors.gandi.net/npm/jest-changed-files/-/jest-changed-files-20.0.1.tgz#ba9bd42c3fddb1b7c4ae40065199b44a2335e152"
@@ -3584,6 +3573,13 @@ jest-haste-map@^20.0.1:
     sane "~1.6.0"
     worker-farm "^1.3.1"
 
+jest-html-reporter@^0.1.0:
+  version "0.1.0"
+  resolved "https://mirrors.gandi.net/npm/jest-html-reporter/-/jest-html-reporter-0.1.0.tgz#885e7295d4832d353c9fed0313a1874defb28618"
+  dependencies:
+    mkdirp "0.5.1"
+    xmlbuilder "8.2.2"
+
 jest-jasmine2@^20.0.1:
   version "20.0.1"
   resolved "https://mirrors.gandi.net/npm/jest-jasmine2/-/jest-jasmine2-20.0.1.tgz#675772b1fd32ad74e92e8ae8282f8ea71d1de168"
@@ -3597,6 +3593,13 @@ jest-jasmine2@^20.0.1:
     jest-snapshot "^20.0.1"
     once "^1.4.0"
     p-map "^1.1.1"
+
+jest-junit@^1.5.1:
+  version "1.5.1"
+  resolved "https://mirrors.gandi.net/npm/jest-junit/-/jest-junit-1.5.1.tgz#f6e48203e691f827530f21fb509f8c0da75ca15b"
+  dependencies:
+    mkdirp "^0.5.1"
+    xml "^1.0.1"
 
 jest-matcher-utils@^20.0.1:
   version "20.0.1"
@@ -6573,9 +6576,13 @@ xml-name-validator@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
 
-xmldom@^0.1.22:
-  version "0.1.27"
-  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
+xml@^1.0.1:
+  version "1.0.1"
+  resolved "https://mirrors.gandi.net/npm/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
+
+xmlbuilder@8.2.2:
+  version "8.2.2"
+  resolved "https://mirrors.gandi.net/npm/xmlbuilder/-/xmlbuilder-8.2.2.tgz#69248673410b4ba42e1a6136551d2922335aa773"
 
 "xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0:
   version "4.0.1"
