@@ -2091,16 +2091,9 @@ domhandler@^2.3.0:
   dependencies:
     domelementtype "1"
 
-domutils@1.5.1:
+domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
-domutils@^1.5.1:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.6.2.tgz#1958cc0b4c9426e9ed367fb1c8e854891b0fa3ff"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -2173,9 +2166,9 @@ entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-enzyme-matchers@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/enzyme-matchers/-/enzyme-matchers-3.1.0.tgz#097fe2b734a7493ed0f8aea727d3976c2d6eac29"
+enzyme-matchers@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/enzyme-matchers/-/enzyme-matchers-3.1.1.tgz#445411f8c50c5642a670aad5734dc8d4442d0757"
   dependencies:
     deep-equal-ident "^1.1.1"
 
@@ -3100,13 +3093,9 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
-iconv-lite@0.4.13:
+iconv-lite@0.4.13, iconv-lite@~0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
-
-iconv-lite@~0.4.13:
-  version "0.4.17"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.17.tgz#4fdaa3b38acbc2c031b045d0edcdfe1ecab18c8d"
 
 icss-replace-symbols@^1.0.2:
   version "1.0.2"
@@ -3566,12 +3555,12 @@ jest-environment-node@^20.0.1:
     jest-mock "^20.0.1"
     jest-util "^20.0.1"
 
-jest-enzyme@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/jest-enzyme/-/jest-enzyme-3.1.0.tgz#378e98ea3bd7d03c769f1830e1d7564a7762169d"
+jest-enzyme@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/jest-enzyme/-/jest-enzyme-3.1.1.tgz#3c27708230bb606ddea16a77011c0cdb66677ad4"
   dependencies:
     "@types/react" "^15.0.22"
-    enzyme-matchers "^3.1.0"
+    enzyme-matchers "^3.1.1"
     enzyme-to-json "^1.5.0"
 
 jest-haste-map@^20.0.1:
@@ -4790,12 +4779,12 @@ postcss-convert-values@^2.3.4:
     postcss "^5.0.11"
     postcss-value-parser "^3.1.2"
 
-postcss-custom-properties@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-5.0.2.tgz#9719d78f2da9cf9f53810aebc23d4656130aceb1"
+postcss-custom-properties@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-6.0.0.tgz#58ad2e5f7c3b7ceab08c276be39136cbc0839c18"
   dependencies:
     balanced-match "^0.4.2"
-    postcss "^5.0.0"
+    postcss "^6.0.1"
 
 postcss-discard-comments@^2.0.4:
   version "2.0.4"
