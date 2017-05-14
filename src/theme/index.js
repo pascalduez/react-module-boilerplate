@@ -9,6 +9,6 @@ const theme = {
 
 // Export configured plugin for use with `babel-plugin-css-modules-transform`.
 module.exports = () =>
-  require('postcss-custom-properties')({
+  require('postcss-custom-properties').default({
     variables: theme,
   });
