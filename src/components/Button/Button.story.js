@@ -22,21 +22,23 @@ stories
   ))
   .add('type property', () => (
     <Button
-      label="Hello"
       theme={select('Theme property', themeOptions, 'primary')}
-    />
+    >
+      Hello
+    </Button>
   ))
   .add('handleClick property', () => (
     <Button
-      label="Click me!"
       handleClick={action('Hello from click handler')}
-    />
+    >
+      Click me!
+    </Button>
   ))
   .addWithInfo(
     'Default usage',
     'This is the default `Button` usage, just providing a `label` property.',
     () => (
-      <Button label="Hello!" />
+      <Button>Hello</Button>
     ),
     { inline: true }
   );

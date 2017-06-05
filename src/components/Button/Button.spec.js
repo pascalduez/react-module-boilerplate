@@ -10,7 +10,7 @@ import styles from './Button.css';
 describe('<Button>', () => {
   it('should render the default markup', () => {
     const wrapper = shallow(
-      <Button label="test" />
+      <Button>test</Button>
     );
 
     expect(wrapper).toHaveTagName('button');
@@ -19,7 +19,7 @@ describe('<Button>', () => {
 
   it('should render the default classes', () => {
     const wrapper = shallow(
-      <Button label="test" />
+      <Button>test</Button>
     );
 
     expect(wrapper).toHaveClassName(styles.root);
@@ -30,7 +30,7 @@ describe('<Button>', () => {
 
   it('should render the default markup and classes [snapshot]', () => {
     const wrapper = shallow(
-      <Button label="test" />
+      <Button>test</Button>
     );
 
     expect(wrapper).toMatchSnapshot();
@@ -41,7 +41,7 @@ describe('<Button>', () => {
   it('should trigger click event handlers', () => {
     const spy = jest.fn();
     const wrapper = mount(
-      <Button label="test" handleClick={spy} />
+      <Button handleClick={spy}>test</Button>
     );
 
     wrapper.simulate('click');
