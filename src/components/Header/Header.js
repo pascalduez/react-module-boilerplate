@@ -8,18 +8,14 @@ export type Props = {
   title: string,
 };
 
-
-const Header = ({ title, ...extraProps }: Props) => (
-  <header
-    role="banner"
-    className={styles.root}
-    {...extraProps}
-  >
-    <h1 className={styles.title}>
-      {title}
-    </h1>
-  </header>
-);
-
+function Header({ title, ...extraProps }: Props) {
+  return (
+    <header role="banner" className={styles.root} {...extraProps}>
+      <h1 className={styles.title}>
+        {title}
+      </h1>
+    </header>
+  );
+}
 
 export default Header;
