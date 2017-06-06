@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign, global-require */
 
-module.exports = (baseConfig) => {
+module.exports = baseConfig => {
   baseConfig.module.rules.push({
     test: /\.css$/,
     use: [
@@ -18,9 +18,7 @@ module.exports = (baseConfig) => {
       {
         loader: 'postcss-loader',
         options: {
-          plugins: [
-            require('../src/theme')({ appendVariables: true }),
-          ],
+          plugins: [require('../src/theme')({ appendVariables: true })],
         },
       },
     ],
