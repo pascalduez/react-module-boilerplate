@@ -1,8 +1,9 @@
 // @flow
 
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import { withKnobs, text, select } from '@kadira/storybook-addon-knobs';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 import Button from './Button';
 
@@ -17,10 +18,10 @@ const themeOptions = {
 
 
 stories
-  .add('label property', () => (
-    <Button label={text('Label property', 'Hello')} />
+  .add('label', () => (
+    <Button>{text('Label property', 'Hello')}</Button>
   ))
-  .add('type property', () => (
+  .add('theme property', () => (
     <Button
       theme={select('Theme property', themeOptions, 'primary')}
     >
@@ -36,7 +37,7 @@ stories
   ))
   .addWithInfo(
     'Default usage',
-    'This is the default `Button` usage, just providing a `label` property.',
+    'This is the default `Button` usage, just providing a `label` as children.',
     () => (
       <Button>Hello</Button>
     ),
