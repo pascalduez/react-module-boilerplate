@@ -109,8 +109,30 @@ type JestPromiseType = {
   resolves: JestExpectType
 };
 
+/**
+ *  Plugin: jest-enzyme
+ */
+type EnzymeMatchersType = {
+  toBeChecked(): void,
+  toBeDisabled(): void,
+  toBeEmpty(): void,
+  toBePresent(): void,
+  toContainReact(component: React$Element<any>): void,
+  toHaveClassName(className: string): void,
+  toHaveHTML(html: string): void,
+  toHaveProp(propKey: string, propValue?: any): void,
+  toHaveRef(refName: string): void,
+  toHaveState(stateKey: string, stateValue?: any): void,
+  toHaveStyle(styleKey: string, styleValue?: any): void,
+  toHaveTagName(tagName: string): void,
+  toHaveText(text: string): void,
+  toIncludeText(text: string): void,
+  toHaveValue(value: any): void,
+  toMatchSelector(selector: string): void,
+};
+
 type JestExpectType = {
-  not: JestExpectType,
+  not: JestExpectType & EnzymeMatchersType,
   /**
    * If you have a mock function, you can use .lastCalledWith to test what
    * arguments it was last called with.
@@ -211,6 +233,11 @@ type JestExpectType = {
    */
   toHaveBeenCalledWith(...args: Array<any>): void,
   /**
+   * Use .toHaveBeenLastCalledWith to ensure that a mock function was last called
+   * with specific arguments.
+   */
+  toHaveBeenLastCalledWith(...args: Array<any>): void,
+  /**
    * Check that an object has a .length property and it is set to a certain
    * numeric value.
    */
@@ -246,28 +273,6 @@ type JestExpectType = {
    * matching the most recent snapshot when it is called.
    */
   toThrowErrorMatchingSnapshot(): void
-};
-
-/**
- *  Plugin: jest-enzyme
- */
-type EnzymeMatchersType = {
-  toBeChecked(): void,
-  toBeDisabled(): void,
-  toBeEmpty(): void,
-  toBePresent(): void,
-  toContainReact(component: React$Component<*, *, *>): void,
-  toHaveClassName(className: string): void,
-  toHaveHTML(html: string): void,
-  toHaveProp(propKey: string, propValue?: any): void,
-  toHaveRef(refName: string): void,
-  toHaveState(stateKey: string, stateValue?: any): void,
-  toHaveStyle(styleKey: string, styleValue?: any): void,
-  toHaveTagName(tagName: string): void,
-  toHaveText(text: string): void,
-  toIncludeText(text: string): void,
-  toHaveValue(value: any): void,
-  toMatchSelector(selector: string): void,
 };
 
 type JestObjectType = {
