@@ -25,14 +25,17 @@ Styling
     * autoprefixer
     * custom properties (theming)
  * Ship two stylesheets
-    * Local scoped styles (React component)
-    * Global styles (use with own markup)
+    * Local scoped styles (React components)
+    * Global styles (use with own markup, classical template engine)
+ * Ship individual CSS modules
+    * Allows for picking just the needed ones
 
 Unit Testing
  * jest
  * enzyme
  * jest-enzyme
  * enzyme-to-json (Snapshots from Enzyme)
+ * CI reports (tests results, coverage)
 
 Code Quality
  * eslint
