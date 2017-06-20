@@ -34,6 +34,14 @@ rules:
     - extensions:
       - ".js"
       - ".jsx"
+  react/sort-comp:
+    - error
+    - order:
+      - "type-annotations"
+      - "static-methods"
+      - "lifecycle"
+      - "everything-else"
+      - "render"
 
   import/no-extraneous-dependencies:
     - error
