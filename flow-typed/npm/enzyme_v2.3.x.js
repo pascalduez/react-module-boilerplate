@@ -1,5 +1,5 @@
-// flow-typed signature: 2347f05faac22d91369b6abccedcac7e
-// flow-typed version: 64d5f46151/enzyme_v2.3.x/flow_>=v0.28.x
+// flow-typed signature: 4540c970f436a61d60be14c1ea8c3a35
+// flow-typed version: bc310904fa/enzyme_v2.3.x/flow_>=v0.28.x
 
 declare module 'enzyme' {
   declare type PredicateFunction<T: Wrapper> = (wrapper: T) => boolean;
@@ -38,6 +38,7 @@ declare module 'enzyme' {
     get(index: number): React$Element<any>;
     getNode(): React$Element<any>;
     getNodes(): Array<React$Element<any>>;
+    getDOMNode(): HTMLElement | HTMLInputElement;
     at(index: number): this;
     first(): this;
     last(): this;
