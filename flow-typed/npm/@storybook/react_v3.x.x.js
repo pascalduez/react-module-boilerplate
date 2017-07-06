@@ -1,3 +1,5 @@
+import type { Options as AddonInfoOptions } from '@storybook/addon-info';
+
 type NodeModule = typeof module;
 
 declare module '@storybook/react' {
@@ -13,12 +15,12 @@ declare module '@storybook/react' {
     add(storyName: string, callback: RenderFunction): Story,
     addDecorator(decorator: StoryDecorator): Story,
 
-    // Addons 
+    // Addons
     addWithInfo(
       storyName: string,
       info: string,
       callback: RenderFunction,
-      options: Object
+      options: AddonInfoOptions
     ): Story;
   }
 
