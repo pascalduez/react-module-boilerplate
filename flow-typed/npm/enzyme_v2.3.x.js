@@ -1,5 +1,5 @@
-// flow-typed signature: 4540c970f436a61d60be14c1ea8c3a35
-// flow-typed version: bc310904fa/enzyme_v2.3.x/flow_>=v0.28.x
+// flow-typed signature: 7403d74c206787e80611f29782f19c4e
+// flow-typed version: e6adbe598a/enzyme_v2.3.x/flow_>=v0.28.x
 
 declare module 'enzyme' {
   declare type PredicateFunction<T: Wrapper> = (wrapper: T) => boolean;
@@ -25,7 +25,7 @@ declare module 'enzyme' {
     hasClass(className: string): boolean;
     is(selector: EnzymeSelector): boolean;
     isEmpty(): boolean;
-    not(selector: EnzymeSelector): boolean;
+    not(selector: EnzymeSelector): this;
     children(selector?: EnzymeSelector): this;
     childAt(index: number): this;
     parents(selector?: EnzymeSelector): this;
