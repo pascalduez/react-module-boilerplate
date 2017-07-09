@@ -17,20 +17,22 @@ const themeOptions = {
 };
 
 stories
-  .add('label', () => <Button>{text('Label property', 'Hello')}</Button>)
+  .add('label', () =>
+    <Button>
+      {text('Label property', 'Hello')}
+    </Button>
+  )
   .add('theme property', () =>
     <Button theme={select('Theme property', themeOptions, 'primary')}>
       Hello
     </Button>
   )
   .add('handleClick property', () =>
-    <Button handleClick={action('Hello from click handler')}>
-      Click me!
-    </Button>
+    <Button handleClick={action('Hello from click handler')}>Click me!</Button>
   )
   .addWithInfo(
     'Default usage',
-    'This is the default `Button` usage, just providing a `label` as children.',
+    'This is the default Button usage, just providing a label as children.',
     () => <Button>Hello</Button>,
-    { inline: true }
+    { inline: true, proptTables: [Button] }
   );
