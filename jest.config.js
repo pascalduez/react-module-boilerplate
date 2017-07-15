@@ -1,4 +1,4 @@
-const ci = require('ci-info');
+const env = process.env.NODE_ENV || '';
 
 const config = {
   roots: [
@@ -14,7 +14,7 @@ const config = {
   setupTestFrameworkScriptFile: 'jest-enzyme',
 };
 
-if (ci.JENKINS) {
+if (env === 'ci') {
   Object.assign(config, {
     coverageDirectory: './reports/coverage',
     testResultsProcessor: './scripts/reports.js',
