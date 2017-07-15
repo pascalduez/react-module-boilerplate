@@ -55,7 +55,7 @@
   },
   "babel": {
     "presets": [
-      "./babelrc.js"
+      "./babel.config.js"
     ]
   },
   "jest-junit": {
