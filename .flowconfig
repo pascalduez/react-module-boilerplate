@@ -1,4 +1,5 @@
 [ignore]
+<PROJECT_ROOT>/node_modules/radium
 <PROJECT_ROOT>/node_modules/stylelint
 <PROJECT_ROOT>/node_modules/flow-coverage-report
 <PROJECT_ROOT>/dist

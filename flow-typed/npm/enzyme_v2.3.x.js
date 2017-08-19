@@ -1,10 +1,11 @@
-// flow-typed signature: 7403d74c206787e80611f29782f19c4e
-// flow-typed version: e6adbe598a/enzyme_v2.3.x/flow_>=v0.28.x
+// flow-typed signature: 67cf88555a22019251c4870d6e78a462
+// flow-typed version: 60d0f06df5/enzyme_v2.3.x/flow_>=v0.28.x
+import * as React from 'react';
 
 declare module 'enzyme' {
-  declare type PredicateFunction<T: Wrapper> = (wrapper: T) => boolean;
+  declare type PredicateFunction<T: Wrapper> = (wrapper: T, index: number) => boolean;
   declare type NodeOrNodes = React$Element<any> | Array<React$Element<any>>;
-  declare type EnzymeSelector = string | ReactClass<any> | Object;
+  declare type EnzymeSelector = string | React.ComponentType<any> | Object;
 
   // CheerioWrapper is a type alias for an actual cheerio instance
   // TODO: Reference correct type from cheerio's type declarations
@@ -48,16 +49,16 @@ declare module 'enzyme' {
     prop(key: string): any;
     key(): string;
     simulate(event: string, ...args: Array<any>): this;
-    setState(state: Object, callback?: Function): this,
-    setProps(props: Object): this;
+    setState(state: {}, callback?: Function): this,
+    setProps(props: {}): this;
     setContext(context: Object): this;
     instance(): React$Component<*, *, *>;
     update(): this;
     debug(): string;
     type(): string | Function | null;
     name(): string;
-    forEach(fn: (node: this) => any): this;
-    map<T>(fn: (node: this) => T): Array<T>;
+    forEach(fn: (node: this, index: number) => mixed): this;
+    map<T>(fn: (node: this, index: number) => T): Array<T>;
     reduce<T>(fn: (value: T, node: this, index: number) => T, initialValue?: T): Array<T>;
     reduceRight<T>(fn: (value: T, node: this, index: number) => T, initialValue?: T): Array<T>;
     some(selector: EnzymeSelector): boolean;

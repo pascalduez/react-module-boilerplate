@@ -1,3 +1,4 @@
+import * as React from 'react';
 import type { StoryDecorator } from '@storybook/react';
 
 declare module '@storybook/addon-knobs' {
@@ -46,6 +47,7 @@ declare module '@storybook/addon-knobs' {
     options: { [s: string]: T },
     value: string
   ): T;
+
   declare export function select(
     name: string,
     options: string[],
@@ -54,7 +56,7 @@ declare module '@storybook/addon-knobs' {
 
   declare export function date(name: string, value?: Date): Date;
 
-  declare type IWrapStoryProps = {
+  declare type WrapStoryProps = {
     context?: Object,
     storyFn?: Function,
     channel?: Object,
@@ -65,12 +67,12 @@ declare module '@storybook/addon-knobs' {
   declare export function withKnobs(
     storyFn: Function,
     context: StoryContext
-  ): React.ReactElement<IWrapStoryProps>;
+  ): React.ComponentType<WrapStoryProps>;
 
   declare export function withKnobsOptions(
     options: Object
   ): (
     storyFn: Function,
     context: StoryContext
-  ) => React.ReactElement<IWrapStoryProps>;
+  ) => React.ComponentType<WrapStoryProps>;
 }
