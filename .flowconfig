@@ -1,8 +1,10 @@
 [ignore]
+<PROJECT_ROOT>/dist
 <PROJECT_ROOT>/node_modules/radium
 <PROJECT_ROOT>/node_modules/stylelint
+<PROJECT_ROOT>/node_modules/jest-enzyme
+<PROJECT_ROOT>/node_modules/enzyme-matchers
 <PROJECT_ROOT>/node_modules/flow-coverage-report
-<PROJECT_ROOT>/dist
 
 [include]
 
