@@ -283,7 +283,7 @@ ansi-escapes@^1.1.0:
 
 ansi-escapes@^3.0.0:
   version "3.0.0"
-  resolved "https://mirrors.gandi.net/npm/ansi-escapes/-/ansi-escapes-3.0.0.tgz#ec3e8b4e9f8064fc02c3ac9b65f1c275bda8ef92"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.0.0.tgz#ec3e8b4e9f8064fc02c3ac9b65f1c275bda8ef92"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -459,7 +459,7 @@ ast-types@0.9.6:
 
 astral-regex@^1.0.0:
   version "1.0.0"
-  resolved "https://mirrors.gandi.net/npm/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
+  resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
 
 async-each@^1.0.0:
   version "1.0.1"
@@ -512,9 +512,9 @@ autoprefixer@^7.1.2:
     postcss "^6.0.6"
     postcss-value-parser "^3.2.3"
 
-autoprefixer@^7.1.3:
+autoprefixer@^7.1.4:
   version "7.1.4"
-  resolved "https://mirrors.gandi.net/npm/autoprefixer/-/autoprefixer-7.1.4.tgz#960847dbaa4016bc8e8e52ec891cbf8f1257a748"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.4.tgz#960847dbaa4016bc8e8e52ec891cbf8f1257a748"
   dependencies:
     browserslist "^2.4.0"
     caniuse-lite "^1.0.30000726"
@@ -850,7 +850,7 @@ babel-helpers@^6.24.1:
 
 babel-jest@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/babel-jest/-/babel-jest-21.0.2.tgz#817ea52c23f1c6c4b684d6960968416b6a9e9c6c"
+  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-21.0.2.tgz#817ea52c23f1c6c4b684d6960968416b6a9e9c6c"
   dependencies:
     babel-plugin-istanbul "^4.0.0"
     babel-preset-jest "^21.0.2"
@@ -900,7 +900,7 @@ babel-plugin-istanbul@^4.0.0:
 
 babel-plugin-jest-hoist@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-21.0.2.tgz#cfdce5bca40d772a056cb8528ad159c7bb4bb03d"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-21.0.2.tgz#cfdce5bca40d772a056cb8528ad159c7bb4bb03d"
 
 babel-plugin-minify-builtins@^0.2.0:
   version "0.2.0"
@@ -1478,7 +1478,7 @@ babel-preset-flow@^6.23.0:
 
 babel-preset-jest@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/babel-preset-jest/-/babel-preset-jest-21.0.2.tgz#9db25def2329f49eace3f5ea0de42a0b898d12cc"
+  resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-21.0.2.tgz#9db25def2329f49eace3f5ea0de42a0b898d12cc"
   dependencies:
     babel-plugin-jest-hoist "^21.0.2"
 
@@ -2000,7 +2000,7 @@ caniuse-lite@^1.0.30000718:
 
 caniuse-lite@^1.0.30000726:
   version "1.0.30000727"
-  resolved "https://mirrors.gandi.net/npm/caniuse-lite/-/caniuse-lite-1.0.30000727.tgz#20c895768398ded5f98a4beab4a76c285def41d2"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000727.tgz#20c895768398ded5f98a4beab4a76c285def41d2"
 
 case-sensitive-paths-webpack-plugin@^2.0.0:
   version "2.1.1"
@@ -2810,7 +2810,7 @@ entities@^1.1.1, entities@~1.1.1:
 
 enzyme-matchers@^3.8.2:
   version "3.8.2"
-  resolved "https://mirrors.gandi.net/npm/enzyme-matchers/-/enzyme-matchers-3.8.2.tgz#bf3c8d2dfea3d372e4895cf22dda3f5154614833"
+  resolved "https://registry.yarnpkg.com/enzyme-matchers/-/enzyme-matchers-3.8.2.tgz#bf3c8d2dfea3d372e4895cf22dda3f5154614833"
   dependencies:
     deep-equal-ident "^1.1.1"
 
@@ -3012,9 +3012,9 @@ eslint-plugin-import@^2.7.0:
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
 
-eslint-plugin-jest@^21.0.0:
+eslint-plugin-jest@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/eslint-plugin-jest/-/eslint-plugin-jest-21.0.2.tgz#2eba7745844648513889d9d1bbefa3f5e3d05e54"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.0.2.tgz#2eba7745844648513889d9d1bbefa3f5e3d05e54"
 
 eslint-plugin-jsx-a11y@5.1.1:
   version "5.1.1"
@@ -3204,7 +3204,7 @@ expand-range@^1.8.1:
 
 expect@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/expect/-/expect-21.0.2.tgz#b34abf0635ec9d6aea1ce7edb4722afe86c4a38f"
+  resolved "https://registry.yarnpkg.com/expect/-/expect-21.0.2.tgz#b34abf0635ec9d6aea1ce7edb4722afe86c4a38f"
   dependencies:
     ansi-styles "^3.2.0"
     jest-diff "^21.0.2"
@@ -3401,9 +3401,9 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-flow-bin@^0.54.0:
+flow-bin@^0.54.1:
   version "0.54.1"
-  resolved "https://mirrors.gandi.net/npm/flow-bin/-/flow-bin-0.54.1.tgz#7101bcccf006dc0652714a8aef0c72078a760510"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.54.1.tgz#7101bcccf006dc0652714a8aef0c72078a760510"
 
 flow-copy-source@^1.2.1:
   version "1.2.1"
@@ -4288,13 +4288,13 @@ istanbul-reports@^1.1.0:
 
 jest-changed-files@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-changed-files/-/jest-changed-files-21.0.2.tgz#0a74f35cf2d3b7c8ef9ab4fac0a75409f81ec1b0"
+  resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-21.0.2.tgz#0a74f35cf2d3b7c8ef9ab4fac0a75409f81ec1b0"
   dependencies:
     throat "^4.0.0"
 
 jest-cli@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-cli/-/jest-cli-21.0.2.tgz#2e08af63d44fc21284ebf496cf71e381f3cc9786"
+  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-21.0.2.tgz#2e08af63d44fc21284ebf496cf71e381f3cc9786"
   dependencies:
     ansi-escapes "^3.0.0"
     chalk "^2.0.1"
@@ -4328,7 +4328,7 @@ jest-cli@^21.0.2:
 
 jest-config@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-config/-/jest-config-21.0.2.tgz#ea42b94f3c22ae4e4aa11c69f5b45e34e342199d"
+  resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-21.0.2.tgz#ea42b94f3c22ae4e4aa11c69f5b45e34e342199d"
   dependencies:
     chalk "^2.0.1"
     glob "^7.1.1"
@@ -4344,7 +4344,7 @@ jest-config@^21.0.2:
 
 jest-diff@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-diff/-/jest-diff-21.0.2.tgz#751014f36ad5d505f6affce5542fde0e444ee50a"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-21.0.2.tgz#751014f36ad5d505f6affce5542fde0e444ee50a"
   dependencies:
     chalk "^2.0.1"
     diff "^3.2.0"
@@ -4353,11 +4353,11 @@ jest-diff@^21.0.2:
 
 jest-docblock@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-docblock/-/jest-docblock-21.0.2.tgz#66f69ddb440799fc32f91d0ac3d8d35e99e2032f"
+  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-21.0.2.tgz#66f69ddb440799fc32f91d0ac3d8d35e99e2032f"
 
 jest-environment-jsdom@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-environment-jsdom/-/jest-environment-jsdom-21.0.2.tgz#6f6ab5bd71970d1900fbd47a46701c0a07fa3be5"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-21.0.2.tgz#6f6ab5bd71970d1900fbd47a46701c0a07fa3be5"
   dependencies:
     jest-mock "^21.0.2"
     jest-util "^21.0.2"
@@ -4365,14 +4365,14 @@ jest-environment-jsdom@^21.0.2:
 
 jest-environment-node@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-environment-node/-/jest-environment-node-21.0.2.tgz#4267ceb39551f8ecaed182ab882a93ef4d5de240"
+  resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-21.0.2.tgz#4267ceb39551f8ecaed182ab882a93ef4d5de240"
   dependencies:
     jest-mock "^21.0.2"
     jest-util "^21.0.2"
 
-jest-enzyme@^3.8.1:
+jest-enzyme@^3.8.2:
   version "3.8.2"
-  resolved "https://mirrors.gandi.net/npm/jest-enzyme/-/jest-enzyme-3.8.2.tgz#b0352ca90193b4acc15509206ec68ddc41d98b6d"
+  resolved "https://registry.yarnpkg.com/jest-enzyme/-/jest-enzyme-3.8.2.tgz#b0352ca90193b4acc15509206ec68ddc41d98b6d"
   dependencies:
     "@types/react" "^15.0.22"
     enzyme-matchers "^3.8.2"
@@ -4380,11 +4380,11 @@ jest-enzyme@^3.8.1:
 
 jest-get-type@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-get-type/-/jest-get-type-21.0.2.tgz#304e6b816dd33cd1f47aba0597bcad258a509fc6"
+  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-21.0.2.tgz#304e6b816dd33cd1f47aba0597bcad258a509fc6"
 
 jest-haste-map@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-haste-map/-/jest-haste-map-21.0.2.tgz#bd98bc6cd6f207eb029b2f5918da1a9347eb11b7"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-21.0.2.tgz#bd98bc6cd6f207eb029b2f5918da1a9347eb11b7"
   dependencies:
     fb-watchman "^2.0.0"
     graceful-fs "^4.1.11"
@@ -4403,7 +4403,7 @@ jest-html-reporter@^0.5.1:
 
 jest-jasmine2@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-jasmine2/-/jest-jasmine2-21.0.2.tgz#a368abb3a686def4d6e763509a265104943cd469"
+  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-21.0.2.tgz#a368abb3a686def4d6e763509a265104943cd469"
   dependencies:
     chalk "^2.0.1"
     expect "^21.0.2"
@@ -4424,7 +4424,7 @@ jest-junit@^3.0.0:
 
 jest-matcher-utils@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-matcher-utils/-/jest-matcher-utils-21.0.2.tgz#eb6736a45b698546d71f7e1ffbbd36587eeb27bc"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-21.0.2.tgz#eb6736a45b698546d71f7e1ffbbd36587eeb27bc"
   dependencies:
     chalk "^2.0.1"
     jest-get-type "^21.0.2"
@@ -4432,7 +4432,7 @@ jest-matcher-utils@^21.0.2:
 
 jest-message-util@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-message-util/-/jest-message-util-21.0.2.tgz#81242e07d426ad54c15f3d7c55b072e9db7b39a9"
+  resolved "https://registry.yarnpkg.com/jest-message-util/-/jest-message-util-21.0.2.tgz#81242e07d426ad54c15f3d7c55b072e9db7b39a9"
   dependencies:
     chalk "^2.0.1"
     micromatch "^2.3.11"
@@ -4440,21 +4440,21 @@ jest-message-util@^21.0.2:
 
 jest-mock@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-mock/-/jest-mock-21.0.2.tgz#5e92902450e1ce78be3864cc4d50dbd5d1582fbd"
+  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-21.0.2.tgz#5e92902450e1ce78be3864cc4d50dbd5d1582fbd"
 
 jest-regex-util@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-regex-util/-/jest-regex-util-21.0.2.tgz#06248c07b53ff444223ebe8e33a25bc051ac976f"
+  resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-21.0.2.tgz#06248c07b53ff444223ebe8e33a25bc051ac976f"
 
 jest-resolve-dependencies@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-resolve-dependencies/-/jest-resolve-dependencies-21.0.2.tgz#c42cc371034023ac1a226a7a52f86233c8871938"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-21.0.2.tgz#c42cc371034023ac1a226a7a52f86233c8871938"
   dependencies:
     jest-regex-util "^21.0.2"
 
 jest-resolve@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-resolve/-/jest-resolve-21.0.2.tgz#57b2c20cbeca2357eb5e638d5c28beca7f38c3f8"
+  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-21.0.2.tgz#57b2c20cbeca2357eb5e638d5c28beca7f38c3f8"
   dependencies:
     browser-resolve "^1.11.2"
     chalk "^2.0.1"
@@ -4462,7 +4462,7 @@ jest-resolve@^21.0.2:
 
 jest-runner@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-runner/-/jest-runner-21.0.2.tgz#1462d431d25f7744e8b5e03837bbf9e268dc8b15"
+  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-21.0.2.tgz#1462d431d25f7744e8b5e03837bbf9e268dc8b15"
   dependencies:
     jest-config "^21.0.2"
     jest-docblock "^21.0.2"
@@ -4477,7 +4477,7 @@ jest-runner@^21.0.2:
 
 jest-runtime@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-runtime/-/jest-runtime-21.0.2.tgz#ce26ba06bcd5501991bd994b1eacc0c7c7913895"
+  resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-21.0.2.tgz#ce26ba06bcd5501991bd994b1eacc0c7c7913895"
   dependencies:
     babel-core "^6.0.0"
     babel-jest "^21.0.2"
@@ -4499,7 +4499,7 @@ jest-runtime@^21.0.2:
 
 jest-snapshot@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-snapshot/-/jest-snapshot-21.0.2.tgz#5b8f4dd05c1759381db835451fba4bcd85a55611"
+  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-21.0.2.tgz#5b8f4dd05c1759381db835451fba4bcd85a55611"
   dependencies:
     chalk "^2.0.1"
     jest-diff "^21.0.2"
@@ -4510,7 +4510,7 @@ jest-snapshot@^21.0.2:
 
 jest-util@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-util/-/jest-util-21.0.2.tgz#3ee2380af25c414a39f07b23c84da6f2d5f1f76a"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-21.0.2.tgz#3ee2380af25c414a39f07b23c84da6f2d5f1f76a"
   dependencies:
     callsites "^2.0.0"
     chalk "^2.0.1"
@@ -4522,16 +4522,16 @@ jest-util@^21.0.2:
 
 jest-validate@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest-validate/-/jest-validate-21.0.2.tgz#dd066b257bd102759c214747d73bed6bcfa4349d"
+  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-21.0.2.tgz#dd066b257bd102759c214747d73bed6bcfa4349d"
   dependencies:
     chalk "^2.0.1"
     jest-get-type "^21.0.2"
     leven "^2.1.0"
     pretty-format "^21.0.2"
 
-jest@^21.0.1:
+jest@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/jest/-/jest-21.0.2.tgz#a5c9bdc9d4322ae672fe8cb3eaf25c268c5f04b2"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-21.0.2.tgz#a5c9bdc9d4322ae672fe8cb3eaf25c268c5f04b2"
   dependencies:
     jest-cli "^21.0.2"
 
@@ -5993,9 +5993,9 @@ postcss@^6.0.1, postcss@^6.0.2, postcss@^6.0.3:
     source-map "^0.5.6"
     supports-color "^4.0.0"
 
-postcss@^6.0.10, postcss@^6.0.11:
+postcss@^6.0.11:
   version "6.0.11"
-  resolved "https://mirrors.gandi.net/npm/postcss/-/postcss-6.0.11.tgz#f48db210b1d37a7f7ab6499b7a54982997ab6f72"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.11.tgz#f48db210b1d37a7f7ab6499b7a54982997ab6f72"
   dependencies:
     chalk "^2.1.0"
     source-map "^0.5.7"
@@ -6031,7 +6031,7 @@ preserve@^0.2.0:
 
 pretty-format@^21.0.2:
   version "21.0.2"
-  resolved "https://mirrors.gandi.net/npm/pretty-format/-/pretty-format-21.0.2.tgz#76adcebd836c41ccd2e6b626e70f63050d2a3534"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-21.0.2.tgz#76adcebd836c41ccd2e6b626e70f63050d2a3534"
   dependencies:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
@@ -6948,7 +6948,7 @@ strict-uri-encode@^1.0.0:
 
 string-length@^2.0.0:
   version "2.0.0"
-  resolved "https://mirrors.gandi.net/npm/string-length/-/string-length-2.0.0.tgz#d40dbb686a3ace960c1cffca562bf2c45f8363ed"
+  resolved "https://registry.yarnpkg.com/string-length/-/string-length-2.0.0.tgz#d40dbb686a3ace960c1cffca562bf2c45f8363ed"
   dependencies:
     astral-regex "^1.0.0"
     strip-ansi "^4.0.0"
@@ -7072,9 +7072,9 @@ stylelint-config-standard@^17.0.0:
   dependencies:
     stylelint-config-recommended "^1.0.0"
 
-stylelint@^8.1.0:
+stylelint@^8.1.1:
   version "8.1.1"
-  resolved "https://mirrors.gandi.net/npm/stylelint/-/stylelint-8.1.1.tgz#9feeed699598b27427715551ed7786db341c19ad"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-8.1.1.tgz#9feeed699598b27427715551ed7786db341c19ad"
   dependencies:
     autoprefixer "^7.1.2"
     balanced-match "^1.0.0"
@@ -7149,7 +7149,7 @@ supports-color@^4.2.0, supports-color@^4.2.1:
 
 supports-color@^4.4.0:
   version "4.4.0"
-  resolved "https://mirrors.gandi.net/npm/supports-color/-/supports-color-4.4.0.tgz#883f7ddabc165142b2a61427f3352ded195d1a3e"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-4.4.0.tgz#883f7ddabc165142b2a61427f3352ded195d1a3e"
   dependencies:
     has-flag "^2.0.0"
 
@@ -7782,7 +7782,7 @@ yargs@^8.0.2:
 
 yargs@^9.0.0:
   version "9.0.0"
-  resolved "https://mirrors.gandi.net/npm/yargs/-/yargs-9.0.0.tgz#efe5b1ad3f94bdc20423411b90628eeec0b25f3c"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-9.0.0.tgz#efe5b1ad3f94bdc20423411b90628eeec0b25f3c"
   dependencies:
     camelcase "^4.1.0"
     cliui "^3.2.0"
