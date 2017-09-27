@@ -11,8 +11,3 @@ git:
   depth: 10
 
 script: yarn run test:ci
-
-cache:
-  yarn: true
-  directories:
-    - node_modules
