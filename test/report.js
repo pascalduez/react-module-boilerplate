@@ -6,4 +6,6 @@
 module.exports = function (result) {
   require('jest-junit')(result);
   require('jest-html-reporter')(result);
+
+  return result;
 }

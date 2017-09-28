@@ -43,6 +43,7 @@
     "test:ci": "NODE_ENV=ci run-s validate 'test -- --coverage --runInBand --no-watchman'",
     "pretest:ci": "rm -rf reports/",
     "styleguide": "start-storybook -p 9001 -c .storybook",
+    "clean": "rm -r dist/ coverage/ reports/ flow-coverage/",
     "build:js:esm": "BABEL_ENV=esm,cssm babel src/ -d dist/esm --ignore '*.spec.js,*.story.js'",
     "build:js:cjsm": "babel dist/esm -d dist/cjsm",
     "build:js": "run-s build:js:*",
