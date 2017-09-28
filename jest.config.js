@@ -11,13 +11,13 @@ const config = {
     '!src/**/*.type.js',
     '!src/**/stories/*.js',
   ],
-  setupTestFrameworkScriptFile: 'jest-enzyme',
+  setupTestFrameworkScriptFile: './test/setup',
 };
 
 if (env === 'ci') {
   Object.assign(config, {
     coverageDirectory: './reports/coverage',
-    testResultsProcessor: './scripts/reports.js',
+    testResultsProcessor: './test/report',
   });
 }
 
