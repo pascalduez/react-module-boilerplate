@@ -1,4 +1,3 @@
-
 module.exports = {
   'color-primary': 'green',
   'color-secondary': 'blue',

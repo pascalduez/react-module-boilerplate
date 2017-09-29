@@ -6,12 +6,9 @@ import { shallow } from 'enzyme';
 import Header from './Header';
 import styles from './Header.css';
 
-
 describe('<Header>', () => {
   it('should render the default markup', () => {
-    const wrapper = shallow(
-      <Header title="test" />
-    );
+    const wrapper = shallow(<Header title="test" />);
 
     expect(wrapper).toHaveTagName('header');
     expect(wrapper.childAt(0)).toHaveTagName('h1');
@@ -19,9 +16,7 @@ describe('<Header>', () => {
   });
 
   it('should render the default classes', () => {
-    const wrapper = shallow(
-      <Header title="test" />
-    );
+    const wrapper = shallow(<Header title="test" />);
 
     expect(wrapper).toHaveClassName(styles.root);
     expect(wrapper.childAt(0)).toHaveClassName(styles.title);
@@ -30,9 +25,7 @@ describe('<Header>', () => {
   // Which is equivalent to:
 
   it('should render the default markup and classes [snapshot]', () => {
-    const wrapper = shallow(
-      <Header title="test" />
-    );
+    const wrapper = shallow(<Header title="test" />);
 
     expect(wrapper).toMatchSnapshot();
   });

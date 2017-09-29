@@ -7,21 +7,16 @@ import { shallow, mount } from 'enzyme';
 import Button from './Button';
 import styles from './Button.css';
 
-
 describe('<Button>', () => {
   it('should render the default markup', () => {
-    const wrapper = shallow(
-      <Button>test</Button>
-    );
+    const wrapper = shallow(<Button>test</Button>);
 
     expect(wrapper).toHaveTagName('button');
     expect(wrapper).toHaveText('test');
   });
 
   it('should render the default classes', () => {
-    const wrapper = shallow(
-      <Button>test</Button>
-    );
+    const wrapper = shallow(<Button>test</Button>);
 
     expect(wrapper).toHaveClassName(styles.root);
     expect(wrapper).toHaveClassName(styles.primary);
@@ -30,9 +25,7 @@ describe('<Button>', () => {
   // Which is equivalent to:
 
   it('should render the default markup and classes [snapshot]', () => {
-    const wrapper = shallow(
-      <Button>test</Button>
-    );
+    const wrapper = shallow(<Button>test</Button>);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -41,9 +34,7 @@ describe('<Button>', () => {
 
   it('should trigger click event handlers', () => {
     const spy = jest.fn();
-    const wrapper = mount(
-      <Button handleClick={spy}>test</Button>
-    );
+    const wrapper = mount(<Button handleClick={spy}>test</Button>);
 
     wrapper.simulate('click');
 

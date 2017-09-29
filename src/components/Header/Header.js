@@ -11,9 +11,7 @@ export type Props = {
 function Header({ title, ...extraProps }: Props) {
   return (
     <header role="banner" className={styles.root} {...extraProps}>
-      <h1 className={styles.title}>
-        {title}
-      </h1>
+      <h1 className={styles.title}>{title}</h1>
     </header>
   );
 }
