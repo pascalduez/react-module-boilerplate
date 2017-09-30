@@ -1,3 +1,5 @@
-global.requestAnimationFrame = (callback) => {
-  setTimeout(callback, 0);
-};
+if (!global.requestAnimationFrame) {
+  global.requestAnimationFrame = (callback) => {
+    setTimeout(callback, 0);
+  };
+}
