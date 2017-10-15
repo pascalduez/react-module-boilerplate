@@ -9,7 +9,7 @@ import styles from './Button.css';
 export type Props = {
   children: Node,
   theme?: 'primary' | 'secondary' | 'danger',
-  handleClick?: () => void,
+  handleClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => void,
 };
 
 function Button({
