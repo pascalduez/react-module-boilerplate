@@ -8,16 +8,14 @@ import { withInfo } from '@storybook/addon-info';
 
 import Button from './Button';
 
-const stories = storiesOf('Button', module);
-stories.addDecorator(withKnobs);
-
 const themeOptions = {
   primary: 'primary',
   secondary: 'secondary',
   danger: 'danger',
 };
 
-stories
+storiesOf('Button', module)
+  .addDecorator(withKnobs)
   .add('label', () => <Button>{text('Label property', 'Hello')}</Button>)
   .add('theme property', () => (
     <Button theme={select('Theme property', themeOptions, 'primary')}>

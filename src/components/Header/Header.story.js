@@ -6,9 +6,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Header from './Header';
 
-const stories = storiesOf('Header', module);
-stories.addDecorator(withKnobs);
-
-stories
+storiesOf('Header', module)
+  .addDecorator(withKnobs)
   .add('with text', () => <Header title={text('Title', 'Hello')} />)
   .add('with some emoji', () => <Header title="😀 😎" />);
