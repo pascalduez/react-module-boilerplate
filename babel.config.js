@@ -18,6 +18,7 @@ const presets = [
 
 const plugins = [
   'transform-object-rest-spread',
+  'transform-class-properties',
   'transform-do-expressions',
 ];
 
