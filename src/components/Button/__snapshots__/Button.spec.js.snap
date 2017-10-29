@@ -2,7 +2,7 @@
 
 exports[`<Button> should render the default markup and classes [snapshot] 1`] = `
 <button
-  className="Button-root_1Z5Y8 Button-primary_1gH9y"
+  className="Button-root Button-primary"
 >
   test
 </button>
