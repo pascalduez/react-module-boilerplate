@@ -6,23 +6,23 @@
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/@hypnosphi/fuse.js/-/fuse.js-3.0.9.tgz#ea99f6121b4a8f065b4c71f85595db2714498807"
 
-"@storybook/addon-actions@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.2.13.tgz#7fae9201514f0efeee710d466828ea3c6bf0ec16"
+"@storybook/addon-actions@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.2.14.tgz#ba20befc3cd67ffdb3cd58eed6702102d58602c2"
   dependencies:
-    "@storybook/addons" "^3.2.13"
+    "@storybook/addons" "^3.2.14"
     deep-equal "^1.0.1"
     json-stringify-safe "^5.0.1"
     prop-types "^15.6.0"
-    react-inspector "^2.2.0"
+    react-inspector "^2.2.1"
     uuid "^3.1.0"
 
-"@storybook/addon-info@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-3.2.13.tgz#9b2ec64f497cd19f85447aeeedb12b7c2fa307c6"
+"@storybook/addon-info@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-3.2.14.tgz#9c4eff70a0319cf25fb367564fc1a928ad81323f"
   dependencies:
-    "@storybook/addons" "^3.2.13"
-    "@storybook/components" "^3.2.13"
+    "@storybook/addons" "^3.2.14"
+    "@storybook/components" "^3.2.14"
     babel-runtime "^6.26.0"
     global "^4.3.2"
     marksy "^2.0.0"
@@ -30,11 +30,11 @@
     react-addons-create-fragment "^15.5.3"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-knobs@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.2.13.tgz#8fcf89f0e6e8363e91f621465fda4f478ea0253c"
+"@storybook/addon-knobs@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.2.14.tgz#2934275dfbe3f940d4be3732af1c8f2b80ee7639"
   dependencies:
-    "@storybook/addons" "^3.2.13"
+    "@storybook/addons" "^3.2.14"
     babel-runtime "^6.26.0"
     deep-equal "^1.0.1"
     global "^4.3.2"
@@ -47,62 +47,62 @@
     react-textarea-autosize "^4.3.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-links@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.2.13.tgz#925bb46350583a73538ac655f23df6f55019b560"
+"@storybook/addon-links@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.2.14.tgz#a8eb9a99df904fbaa3412eb0ecfbf2c7e257959d"
   dependencies:
-    "@storybook/addons" "^3.2.13"
+    "@storybook/addons" "^3.2.14"
 
-"@storybook/addon-options@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.2.13.tgz#d605c50f4ff60d7470b36b4fb55d15bf1450f078"
+"@storybook/addon-options@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.2.14.tgz#5bb56d667a651a62d32d79b92914544393f10329"
   dependencies:
-    "@storybook/addons" "^3.2.13"
+    "@storybook/addons" "^3.2.14"
 
-"@storybook/addons@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.2.13.tgz#a133103770a7f2330bc931571df1b2ae660f8f71"
+"@storybook/addons@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.2.14.tgz#4d765c47e94729a33ca5466c9ee0f159c9f141db"
 
-"@storybook/channel-postmessage@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-3.2.13.tgz#41d243e8def775696ac9159254b28c7d183b891c"
+"@storybook/channel-postmessage@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-3.2.14.tgz#b54785d26f67019324f1daf822ed526f26363fc6"
   dependencies:
-    "@storybook/channels" "^3.2.13"
+    "@storybook/channels" "^3.2.14"
     global "^4.3.2"
     json-stringify-safe "^5.0.1"
 
-"@storybook/channels@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.2.13.tgz#d4e04f99b1bb12cc3203839823218860358be480"
+"@storybook/channels@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.2.14.tgz#0d7522bff3fdefe534828e80ef3b3b1360057c9e"
 
-"@storybook/components@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.2.13.tgz#0576139f54468c9039da6a05d8ed2f1656f6007e"
+"@storybook/components@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.2.14.tgz#da17f8ee4582fb10fcfec07be5f72b9031534ee1"
   dependencies:
     glamor "^2.20.40"
-    glamorous "^4.9.7"
+    glamorous "^4.11.0"
     prop-types "^15.6.0"
 
-"@storybook/react-fuzzy@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@storybook/react-fuzzy/-/react-fuzzy-0.4.1.tgz#612bdf7768585ad6e086b4738efbf204e94290a0"
+"@storybook/react-fuzzy@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/react-fuzzy/-/react-fuzzy-0.4.3.tgz#36f7536ba97bf08b03cb57f47c58ae2cca330aec"
   dependencies:
     babel-runtime "^6.23.0"
     classnames "^2.2.5"
     fuse.js "^3.0.1"
     prop-types "^15.5.9"
 
-"@storybook/react@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-3.2.13.tgz#d5b4d24a16a78b74d89bcee22475c755a05693cd"
+"@storybook/react@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-3.2.14.tgz#42612fb96da4bf84e3367e5371e95a484b54a4fb"
   dependencies:
-    "@storybook/addon-actions" "^3.2.13"
-    "@storybook/addon-links" "^3.2.13"
-    "@storybook/addons" "^3.2.13"
-    "@storybook/channel-postmessage" "^3.2.13"
-    "@storybook/ui" "^3.2.13"
+    "@storybook/addon-actions" "^3.2.14"
+    "@storybook/addon-links" "^3.2.14"
+    "@storybook/addons" "^3.2.14"
+    "@storybook/channel-postmessage" "^3.2.14"
+    "@storybook/ui" "^3.2.14"
     airbnb-js-shims "^1.3.0"
-    autoprefixer "^7.1.5"
+    autoprefixer "^7.1.6"
     babel-core "^6.26.0"
     babel-loader "^7.1.2"
     babel-plugin-react-docgen "^1.8.0"
@@ -111,11 +111,11 @@
     babel-preset-env "^1.6.1"
     babel-preset-minify "^0.2.0"
     babel-preset-react "^6.24.1"
-    babel-preset-react-app "^3.0.3"
+    babel-preset-react-app "^3.1.0"
     babel-preset-stage-0 "^6.24.1"
     babel-runtime "^6.26.0"
     case-sensitive-paths-webpack-plugin "^2.1.1"
-    chalk "^2.2.0"
+    chalk "^2.3.0"
     commander "^2.11.0"
     common-tags "^1.4.0"
     configstore "^3.1.1"
@@ -125,7 +125,7 @@
     file-loader "^0.11.2"
     find-cache-dir "^1.0.0"
     glamor "^2.20.40"
-    glamorous "^4.9.7"
+    glamorous "^4.11.0"
     global "^4.3.2"
     json-loader "^0.5.7"
     json-stringify-safe "^5.0.1"
@@ -149,13 +149,13 @@
     webpack-dev-middleware "^1.12.0"
     webpack-hot-middleware "^2.20.0"
 
-"@storybook/ui@^3.2.13":
-  version "3.2.13"
-  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-3.2.13.tgz#c50150a793802e1f4f344fe3ee7af3998d7c5196"
+"@storybook/ui@^3.2.14":
+  version "3.2.14"
+  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-3.2.14.tgz#3a2fbd770340829d018750ceab75bf85708b9467"
   dependencies:
     "@hypnosphi/fuse.js" "^3.0.9"
-    "@storybook/components" "^3.2.13"
-    "@storybook/react-fuzzy" "^0.4.1"
+    "@storybook/components" "^3.2.14"
+    "@storybook/react-fuzzy" "^0.4.3"
     babel-runtime "^6.26.0"
     deep-equal "^1.0.1"
     events "^1.1.1"
@@ -170,16 +170,24 @@
     prop-types "^15.6.0"
     qs "^6.5.1"
     react-icons "^2.2.7"
-    react-inspector "^2.2.0"
+    react-inspector "^2.2.1"
     react-komposer "^2.0.0"
     react-modal "^2.4.1"
-    react-split-pane "^0.1.65"
+    react-split-pane "^0.1.68"
     react-treebeard "^2.0.3"
     redux "^3.7.2"
+
+"@types/inline-style-prefixer@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/inline-style-prefixer/-/inline-style-prefixer-3.0.1.tgz#8541e636b029124b747952e9a28848286d2b5bf6"
 
 "@types/node@^6.0.46":
   version "6.0.88"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.88.tgz#f618f11a944f6a18d92b5c472028728a3e3d4b66"
+
+"@types/react@^16.0.18":
+  version "16.0.20"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.20.tgz#dc16feb9c0bdf50e439482c6fd3c43d5a1d9f3b1"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -489,17 +497,6 @@ autoprefixer@^7.1.2:
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^6.0.11"
-    postcss-value-parser "^3.2.3"
-
-autoprefixer@^7.1.5:
-  version "7.1.5"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.5.tgz#d65d14b83c7cd1dd7bc801daa00557addf5a06b2"
-  dependencies:
-    browserslist "^2.5.0"
-    caniuse-lite "^1.0.30000744"
-    normalize-range "^0.1.2"
-    num2fraction "^1.2.2"
-    postcss "^6.0.13"
     postcss-value-parser "^3.2.3"
 
 autoprefixer@^7.1.6:
@@ -821,13 +818,13 @@ babel-plugin-css-modules-transform@^1.2.7:
     css-modules-require-hook "^4.0.6"
     mkdirp "^0.5.1"
 
-babel-plugin-dynamic-import-node@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-1.0.2.tgz#adb5bc8f48a89311540395ae9f0cc3ed4b10bb2e"
+babel-plugin-dynamic-import-node@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-1.1.0.tgz#bd1d88ac7aaf98df4917c384373b04d971a2b37a"
   dependencies:
     babel-plugin-syntax-dynamic-import "^6.18.0"
-    babel-template "^6.24.1"
-    babel-types "^6.24.1"
+    babel-template "^6.26.0"
+    babel-types "^6.26.0"
 
 babel-plugin-istanbul@^4.0.0:
   version "4.1.5"
@@ -1233,19 +1230,19 @@ babel-plugin-transform-minify-booleans@^6.8.3:
   version "6.8.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-minify-booleans/-/babel-plugin-transform-minify-booleans-6.8.3.tgz#5906ed776d3718250519abf1bace44b0b613ddf9"
 
-babel-plugin-transform-object-rest-spread@6.23.0, babel-plugin-transform-object-rest-spread@^6.22.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.23.0.tgz#875d6bc9be761c58a2ae3feee5dc4895d8c7f921"
-  dependencies:
-    babel-plugin-syntax-object-rest-spread "^6.8.0"
-    babel-runtime "^6.22.0"
-
-babel-plugin-transform-object-rest-spread@^6.20.2, babel-plugin-transform-object-rest-spread@^6.26.0:
+babel-plugin-transform-object-rest-spread@6.26.0, babel-plugin-transform-object-rest-spread@^6.20.2, babel-plugin-transform-object-rest-spread@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.26.0.tgz#0f36692d50fef6b7e2d4b3ac1478137a963b7b06"
   dependencies:
     babel-plugin-syntax-object-rest-spread "^6.8.0"
     babel-runtime "^6.26.0"
+
+babel-plugin-transform-object-rest-spread@^6.22.0:
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.23.0.tgz#875d6bc9be761c58a2ae3feee5dc4895d8c7f921"
+  dependencies:
+    babel-plugin-syntax-object-rest-spread "^6.8.0"
+    babel-runtime "^6.22.0"
 
 babel-plugin-transform-property-literals@^6.8.5:
   version "6.8.5"
@@ -1287,13 +1284,7 @@ babel-plugin-transform-react-jsx@6.24.1, babel-plugin-transform-react-jsx@^6.24.
     babel-plugin-syntax-jsx "^6.8.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-regenerator@6.24.1:
-  version "6.24.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.24.1.tgz#b8da305ad43c3c99b4848e4fe4037b770d23c418"
-  dependencies:
-    regenerator-transform "0.9.11"
-
-babel-plugin-transform-regenerator@^6.22.0, babel-plugin-transform-regenerator@^6.26.0:
+babel-plugin-transform-regenerator@6.26.0, babel-plugin-transform-regenerator@^6.22.0, babel-plugin-transform-regenerator@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.26.0.tgz#e0703696fbde27f0a3efcacf8b4dca2f7b3a8f2f"
   dependencies:
@@ -1346,42 +1337,7 @@ babel-polyfill@^6.26.0:
     core-js "^2.5.0"
     regenerator-runtime "^0.10.5"
 
-babel-preset-env@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.5.2.tgz#cd4ae90a6e94b709f97374b33e5f8b983556adef"
-  dependencies:
-    babel-plugin-check-es2015-constants "^6.22.0"
-    babel-plugin-syntax-trailing-function-commas "^6.22.0"
-    babel-plugin-transform-async-to-generator "^6.22.0"
-    babel-plugin-transform-es2015-arrow-functions "^6.22.0"
-    babel-plugin-transform-es2015-block-scoped-functions "^6.22.0"
-    babel-plugin-transform-es2015-block-scoping "^6.23.0"
-    babel-plugin-transform-es2015-classes "^6.23.0"
-    babel-plugin-transform-es2015-computed-properties "^6.22.0"
-    babel-plugin-transform-es2015-destructuring "^6.23.0"
-    babel-plugin-transform-es2015-duplicate-keys "^6.22.0"
-    babel-plugin-transform-es2015-for-of "^6.23.0"
-    babel-plugin-transform-es2015-function-name "^6.22.0"
-    babel-plugin-transform-es2015-literals "^6.22.0"
-    babel-plugin-transform-es2015-modules-amd "^6.22.0"
-    babel-plugin-transform-es2015-modules-commonjs "^6.23.0"
-    babel-plugin-transform-es2015-modules-systemjs "^6.23.0"
-    babel-plugin-transform-es2015-modules-umd "^6.23.0"
-    babel-plugin-transform-es2015-object-super "^6.22.0"
-    babel-plugin-transform-es2015-parameters "^6.23.0"
-    babel-plugin-transform-es2015-shorthand-properties "^6.22.0"
-    babel-plugin-transform-es2015-spread "^6.22.0"
-    babel-plugin-transform-es2015-sticky-regex "^6.22.0"
-    babel-plugin-transform-es2015-template-literals "^6.22.0"
-    babel-plugin-transform-es2015-typeof-symbol "^6.23.0"
-    babel-plugin-transform-es2015-unicode-regex "^6.22.0"
-    babel-plugin-transform-exponentiation-operator "^6.22.0"
-    babel-plugin-transform-regenerator "^6.22.0"
-    browserslist "^2.1.2"
-    invariant "^2.2.2"
-    semver "^5.3.0"
-
-babel-preset-env@^1.6.1:
+babel-preset-env@1.6.1, babel-preset-env@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.6.1.tgz#a18b564cc9b9afdf4aae57ae3c1b0d99188e6f48"
   dependencies:
@@ -1457,21 +1413,21 @@ babel-preset-minify@^0.2.0:
     babel-plugin-transform-undefined-to-void "^6.8.3"
     lodash.isplainobject "^4.0.6"
 
-babel-preset-react-app@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/babel-preset-react-app/-/babel-preset-react-app-3.0.3.tgz#5716d6a8c7354db0cc2707207ab6ceb3b2e0a825"
+babel-preset-react-app@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-react-app/-/babel-preset-react-app-3.1.0.tgz#d77f6061ab9d7bf4b3cdc86b7cde9ded0df03e48"
   dependencies:
-    babel-plugin-dynamic-import-node "1.0.2"
+    babel-plugin-dynamic-import-node "1.1.0"
     babel-plugin-syntax-dynamic-import "6.18.0"
     babel-plugin-transform-class-properties "6.24.1"
-    babel-plugin-transform-object-rest-spread "6.23.0"
+    babel-plugin-transform-object-rest-spread "6.26.0"
     babel-plugin-transform-react-constant-elements "6.23.0"
     babel-plugin-transform-react-jsx "6.24.1"
     babel-plugin-transform-react-jsx-self "6.22.0"
     babel-plugin-transform-react-jsx-source "6.22.0"
-    babel-plugin-transform-regenerator "6.24.1"
+    babel-plugin-transform-regenerator "6.26.0"
     babel-plugin-transform-runtime "6.23.0"
-    babel-preset-env "1.5.2"
+    babel-preset-env "1.6.1"
     babel-preset-react "6.24.1"
 
 babel-preset-react@6.24.1, babel-preset-react@^6.24.1:
@@ -1798,13 +1754,6 @@ browserslist@^2.1.2, browserslist@^2.4.0:
     caniuse-lite "^1.0.30000718"
     electron-to-chromium "^1.3.18"
 
-browserslist@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.5.0.tgz#0ea00d22813a4dfae5786485225a9c584b3ef37c"
-  dependencies:
-    caniuse-lite "^1.0.30000744"
-    electron-to-chromium "^1.3.24"
-
 browserslist@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.5.1.tgz#68e4bc536bbcc6086d62843a2ffccea8396821c6"
@@ -1937,9 +1886,9 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
-chalk@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.2.0.tgz#477b3bf2f9b8fd5ca9e429747e37f724ee7af240"
+chalk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.0.tgz#b5ea48efc9c1793dccc9b4767c93914d3f2d52ba"
   dependencies:
     ansi-styles "^3.1.0"
     escape-string-regexp "^1.0.5"
@@ -2670,20 +2619,20 @@ entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-enzyme-adapter-react-16@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.0.2.tgz#8c6f431f17c69e1e9eeb25ca4bd92f31971eb2dd"
+enzyme-adapter-react-16@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.0.4.tgz#67f898cc053452f5c786424e395fe0c63a0607fe"
   dependencies:
-    enzyme-adapter-utils "^1.0.0"
+    enzyme-adapter-utils "^1.1.0"
     lodash "^4.17.4"
     object.assign "^4.0.4"
     object.values "^1.0.4"
     prop-types "^15.5.10"
     react-test-renderer "^16.0.0-0"
 
-enzyme-adapter-utils@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.0.0.tgz#e94eee63da9a798d498adb1162a2102ed04fc638"
+enzyme-adapter-utils@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.1.1.tgz#689de8853f0751710590d6dfa730ff4056ea36b2"
   dependencies:
     lodash "^4.17.4"
     object.assign "^4.0.4"
@@ -2701,9 +2650,9 @@ enzyme-to-json@^3.0.0:
   dependencies:
     lodash "^4.17.4"
 
-enzyme@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.1.0.tgz#d8ca84085790fbcec6ed40badd14478faee4c25a"
+enzyme@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.1.1.tgz#c6948dfccd055d75fbd8627ad1c96a024d0e247b"
   dependencies:
     cheerio "^1.0.0-rc.2"
     function.prototype.name "^1.0.3"
@@ -2714,7 +2663,7 @@ enzyme@^3.0.0:
     object.entries "^1.0.4"
     object.values "^1.0.4"
     raf "^3.3.2"
-    rst-selector-parser "^2.2.2"
+    rst-selector-parser "^2.2.3"
 
 errno@^0.1.3, errno@^0.1.4:
   version "0.1.4"
@@ -3296,9 +3245,9 @@ flow-annotation-check@1.3.1:
     glob "7.1.1"
     load-pkg "^3.0.1"
 
-flow-bin@^0.57.3:
-  version "0.57.3"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.57.3.tgz#843fb80a821b6d0c5847f7bb3f42365ffe53b27b"
+flow-bin@^0.58.0:
+  version "0.58.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.58.0.tgz#62d5a776589419e5656800a0e5230a5e585ca65e"
 
 flow-copy-source@^1.2.1:
   version "1.2.1"
@@ -3489,9 +3438,9 @@ glamor@^2.20.40:
     prop-types "^15.5.10"
     through "^2.3.8"
 
-glamorous@^4.9.7:
-  version "4.9.7"
-  resolved "https://registry.yarnpkg.com/glamorous/-/glamorous-4.9.7.tgz#78bb008d1404b5bd91ad4d043ec0dc6430ad2653"
+glamorous@^4.11.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/glamorous/-/glamorous-4.11.0.tgz#cb846dda1450c895c59a34060fb19e3251ed619f"
   dependencies:
     brcast "^3.0.0"
     fast-memoize "^2.2.7"
@@ -5875,11 +5824,19 @@ postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.11, postcss@^6.0.2, postcss@^6.0.3,
     source-map "^0.5.7"
     supports-color "^4.4.0"
 
-postcss@^6.0.12, postcss@^6.0.13:
+postcss@^6.0.13:
   version "6.0.13"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.13.tgz#b9ecab4ee00c89db3ec931145bd9590bbf3f125f"
   dependencies:
     chalk "^2.1.0"
+    source-map "^0.6.1"
+    supports-color "^4.4.0"
+
+postcss@^6.0.14:
+  version "6.0.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.14.tgz#5534c72114739e75d0afcf017db853099f562885"
+  dependencies:
+    chalk "^2.3.0"
     source-map "^0.6.1"
     supports-color "^4.4.0"
 
@@ -6151,9 +6108,9 @@ react-icons@^2.2.7:
   dependencies:
     react-icon-base "2.1.0"
 
-react-inspector@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-2.2.0.tgz#2aa0778c3512063f598d7a89a28a5d5c7733cad7"
+react-inspector@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-2.2.1.tgz#c24f9a0131960b8e63c8392254d34df0717aabdf"
   dependencies:
     babel-runtime "^6.26.0"
     is-dom "^1.0.9"
@@ -6196,10 +6153,12 @@ react-simple-di@^1.2.0:
     babel-runtime "6.x.x"
     hoist-non-react-statics "1.x.x"
 
-react-split-pane@^0.1.65:
-  version "0.1.66"
-  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.66.tgz#369085dd07ec1237bda123e73813dcc7dc6502c1"
+react-split-pane@^0.1.68:
+  version "0.1.68"
+  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.68.tgz#a4ed40b0e77f0578cb6c9f9e65edd32726e4b16a"
   dependencies:
+    "@types/inline-style-prefixer" "^3.0.0"
+    "@types/react" "^16.0.18"
     inline-style-prefixer "^3.0.6"
     prop-types "^15.5.10"
     react-style-proptype "^3.0.0"
@@ -6391,14 +6350,6 @@ regenerator-runtime@^0.10.0, regenerator-runtime@^0.10.5:
 regenerator-runtime@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.0.tgz#7e54fe5b5ccd5d6624ea6255c3473be090b802e1"
-
-regenerator-transform@0.9.11:
-  version "0.9.11"
-  resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.9.11.tgz#3a7d067520cb7b7176769eb5ff868691befe1283"
-  dependencies:
-    babel-runtime "^6.18.0"
-    babel-types "^6.19.0"
-    private "^0.1.6"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
@@ -6594,9 +6545,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
-rst-selector-parser@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/rst-selector-parser/-/rst-selector-parser-2.2.2.tgz#9927b619bd5af8dc23a76c64caef04edf90d2c65"
+rst-selector-parser@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/rst-selector-parser/-/rst-selector-parser-2.2.3.tgz#81b230ea2fcc6066c89e3472de794285d9b03d91"
   dependencies:
     lodash.flattendeep "^4.4.0"
     nearley "^2.7.10"
