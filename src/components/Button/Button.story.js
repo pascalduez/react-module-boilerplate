@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
+import { checkA11y } from 'storybook-addon-a11y';
 
 import Button from './Button';
 
@@ -16,6 +17,7 @@ const themeOptions = {
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
+  .addDecorator(checkA11y)
   .add('label', () => <Button>{text('Label property', 'Hello')}</Button>)
   .add('theme property', () => (
     <Button theme={select('Theme property', themeOptions, 'primary')}>
