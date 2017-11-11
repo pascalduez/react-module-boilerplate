@@ -4,7 +4,11 @@
  * `csslocal`   scoped css classnames (default)
  * `cjsm`       commonjs modules
  * `esm`        ES2015+ modules (default)
- *
+ */
+
+const env = (process.env.BABEL_ENV || '').split(',');
+
+/**
  * [CSS modules]
  * https://github.com/css-modules/css-modules
  * https://github.com/michalkvasnicak/babel-plugin-css-modules-transform
@@ -16,15 +20,7 @@
  * https://babeljs.io/docs/plugins/transform-object-rest-spread
  * https://babeljs.io/docs/plugins/transform-class-properties
  * https://babeljs.io/docs/plugins/transform-do-expressions
- *
  */
-
-const env = {
-  list: (process.env.BABEL_ENV || '').split(','),
-  has(feature) {
-    return this.list.indexOf(feature) > -1;
-  },
-};
 
 const presets = [
   [
@@ -34,7 +30,7 @@ const presets = [
         browsers: ['last 2 versions', '> 1%'],
         node: 'current',
       },
-      modules: env.has('cjsm') ? 'commonjs' : false,
+      modules: env.includes('cjsm') ? 'commonjs' : false,
     },
   ],
   'react',
@@ -46,11 +42,11 @@ const plugins = [
   'transform-do-expressions',
 ];
 
-const cssClassPattern = env.has('cssglobal')
+const cssClassPattern = env.includes('cssglobal')
   ? '[name]-[local]'
   : '[name]-[local]_[hash:base64:5]';
 
-const cssDistTarget = env.has('cssglobal')
+const cssDistTarget = env.includes('cssglobal')
   ? './dist/stylesheets/global'
   : './dist/stylesheets/local';
 
@@ -67,7 +63,7 @@ const cssmPlugin = [
   },
 ];
 
-if (env.has('cssm')) {
+if (env.includes('cssm')) {
   plugins.push(cssmPlugin);
 }
 
