@@ -17,7 +17,6 @@ function Button({
   theme = 'primary',
   handleClick,
   ...extraProps
-  // eslint-disable-next-line
 }: Props) {
   return (
     <button
