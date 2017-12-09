@@ -611,6 +611,17 @@ autoprefixer@^7.1.2, autoprefixer@^7.1.6:
     postcss "^6.0.14"
     postcss-value-parser "^3.2.3"
 
+autoprefixer@^7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.2.2.tgz#082293b964be00602efacc59aa4aa7df5158bb6e"
+  dependencies:
+    browserslist "^2.10.0"
+    caniuse-lite "^1.0.30000780"
+    normalize-range "^0.1.2"
+    num2fraction "^1.2.2"
+    postcss "^6.0.14"
+    postcss-value-parser "^3.2.3"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -1798,6 +1809,13 @@ browserslist@^2.1.2, browserslist@^2.9.1:
     caniuse-lite "^1.0.30000770"
     electron-to-chromium "^1.3.27"
 
+browserslist@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.10.0.tgz#bac5ee1cc69ca9d96403ffb8a3abdc5b6aed6346"
+  dependencies:
+    caniuse-lite "^1.0.30000780"
+    electron-to-chromium "^1.3.28"
+
 bser@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/bser/-/bser-2.0.0.tgz#9ac78d3ed5d915804fd87acb158bc797147a1719"
@@ -1877,6 +1895,10 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
 caniuse-lite@^1.0.30000770, caniuse-lite@^1.0.30000777:
   version "1.0.30000777"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000777.tgz#31c18a4a8cd49782ebb305c8e8a93e6b3b3e4f13"
+
+caniuse-lite@^1.0.30000780:
+  version "1.0.30000780"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000780.tgz#1f9095f2efd4940e0ba6c5992ab7a9b64cc35ba4"
 
 case-sensitive-paths-webpack-plugin@^2.1.1:
   version "2.1.1"
@@ -2646,6 +2668,10 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.27:
   version "1.3.27"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.27.tgz#78ecb8a399066187bb374eede35d9c70565a803d"
 
+electron-to-chromium@^1.3.28:
+  version "1.3.28"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.28.tgz#8dd4e6458086644e9f9f0a1cf32e2a1f9dffd9ee"
+
 elliptic@^6.0.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.0.tgz#cac9af8762c85836187003c8dfe193e5e2eae5df"
@@ -2908,9 +2934,9 @@ eslint-plugin-import@^2.8.0:
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
 
-eslint-plugin-jest@^21.3.2:
-  version "21.3.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.3.2.tgz#b1cefc05f0fed700eb40185a94d16f6d575d1ef9"
+eslint-plugin-jest@^21.4.2:
+  version "21.4.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.4.2.tgz#0e8ec03687259169cef46656827a0a0715e8a8d4"
 
 eslint-plugin-jsx-a11y@6.0.2:
   version "6.0.2"
@@ -2944,9 +2970,9 @@ eslint-scope@^3.7.1:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint@^4.12.0:
-  version "4.12.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.12.1.tgz#5ec1973822b4a066b353770c3c6d69a2a188e880"
+eslint@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.13.0.tgz#1991aa359586af83877bde59de9d41f53e20826d"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -3325,9 +3351,9 @@ flow-annotation-check@1.3.1:
     glob "7.1.1"
     load-pkg "^3.0.1"
 
-flow-bin@^0.60.1:
-  version "0.60.1"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.60.1.tgz#0f4fa7b49be2a916f18cd946fc4a51e32ffe4b48"
+flow-bin@^0.61.0:
+  version "0.61.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.61.0.tgz#d0473a8c35dbbf4de573823f4932124397d32d35"
 
 flow-copy-source@^1.2.1:
   version "1.2.1"
@@ -4396,9 +4422,9 @@ jest-haste-map@^21.2.0:
     sane "^2.0.0"
     worker-farm "^1.3.1"
 
-jest-html-reporter@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/jest-html-reporter/-/jest-html-reporter-0.5.3.tgz#6c7ca4783e725becdfdc5d462d2747fb514dfe31"
+jest-html-reporter@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/jest-html-reporter/-/jest-html-reporter-0.5.6.tgz#7193c19d937292dc95f185bb0381cb7162f62af9"
   dependencies:
     mkdirp "0.5.1"
     strip-ansi "3.0.1"
@@ -4417,9 +4443,9 @@ jest-jasmine2@^21.2.1:
     jest-snapshot "^21.2.1"
     p-cancelable "^0.3.0"
 
-jest-junit@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-3.3.0.tgz#473b8c00d171a84a61ad6e456a29936ee0b64f40"
+jest-junit@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-3.4.0.tgz#a12d0a61c1fa401376ccf95ec907c50c96d497dc"
   dependencies:
     mkdirp "^0.5.1"
     strip-ansi "^4.0.0"
