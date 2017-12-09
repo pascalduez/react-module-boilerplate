@@ -1,9 +1,8 @@
 [ignore]
-.*/node_modules/radium
 <PROJECT_ROOT>/dist
-<PROJECT_ROOT>/node_modules/immutable
-<PROJECT_ROOT>/node_modules/stylelint
-<PROJECT_ROOT>/node_modules/flow-coverage-report
+
+[untyped]
+<PROJECT_ROOT>/node_modules/storybook-addon-a11y
 
 [include]
 
