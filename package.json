@@ -52,7 +52,8 @@
     "concat:css": "./scripts/concat-styles.js",
     "build": "run-s build:** concat:**",
     "prebuild": "rm -rf dist/",
-    "prepublishOnly": "run-s validate test:cover build"
+    "prepare": "run-s build",
+    "prepublishOnly": "run-s validate test:cover"
   },
   "babel": {
     "presets": [
