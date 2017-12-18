@@ -11,7 +11,7 @@ const config = {
     '!src/**/*.type.js',
     '!src/**/stories/*.js',
   ],
-  setupFiles: ['./test/shim', './test/setup'],
+  setupFiles: ['./test/setup'],
   setupTestFrameworkScriptFile: 'jest-enzyme',
 };
 
