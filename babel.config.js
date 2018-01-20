@@ -27,7 +27,7 @@ const env = (process.env.BABEL_ENV || '').split(',');
 
 const presets = [
   [
-    'env',
+    '@babel/env',
     {
       targets: {
         browsers: ['last 2 versions', '> 1%'],
@@ -36,13 +36,14 @@ const presets = [
       modules: env.includes('cjsm') ? 'commonjs' : false,
     },
   ],
-  'react',
+  '@babel/react',
+  '@babel/flow',
 ];
 
 const plugins = [
-  'transform-object-rest-spread',
-  'transform-class-properties',
-  'transform-do-expressions',
+  '@babel/proposal-object-rest-spread',
+  '@babel/proposal-class-properties',
+  '@babel/proposal-do-expressions',
 ];
 
 const cssClassPattern = env.includes('cssglobal')
@@ -70,7 +71,7 @@ if (env.includes('cssm')) {
   plugins.push(cssmPlugin);
 }
 
-module.exports = {
+module.exports = () => ({
   presets,
   plugins,
-};
+});
