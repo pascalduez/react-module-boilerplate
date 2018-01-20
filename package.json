@@ -121,8 +121,8 @@
     "stylelint-config-standard": "^18.0.0"
   },
   "peerDependencies": {
-    "classnames": "^2.2.5",
-    "react": "^15.3.2",
-    "react-dom": "^15.5.4"
+    "classnames": "^2.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }
