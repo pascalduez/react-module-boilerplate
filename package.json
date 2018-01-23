@@ -60,14 +60,6 @@
       "./babel.config.js"
     ]
   },
-  "jest-junit": {
-    "suiteName": "react-module-boilerplate unit tests",
-    "output": "./reports/junit-report.xml"
-  },
-  "jest-html-reporter": {
-    "pageTitle": "react-module-boilerplate unit tests",
-    "outputPath": "./reports/output-report.html"
-  },
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.38",
@@ -102,10 +94,10 @@
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.63.1",
     "flow-copy-source": "^1.2.1",
-    "flow-coverage-report": "^0.4.0",
+    "flow-coverage-report": "^0.4.1",
     "jest": "^22.1.4",
     "jest-enzyme": "^4.0.2",
-    "jest-html-reporter": "^0.5.7",
+    "jest-html-reporter": "^0.5.8",
     "jest-junit": "^3.4.1",
     "multistream": "^2.1.0",
     "npm-run-all": "^4.1.2",
