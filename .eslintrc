@@ -6,6 +6,9 @@ extends:
   - "plugin:flowtype/recommended"
   - "plugin:css-modules/recommended"
   - "plugin:jest/recommended"
+  - "prettier"
+  - "prettier/flowtype"
+  - "prettier/react"
 
 plugins:
   - "flowtype"

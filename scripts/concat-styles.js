@@ -15,11 +15,11 @@ const variablesFile = 'variables.css';
 /**
  * Create a valid CSS rule set from JS object.
  */
-function variables()/*: string */ {
+function variables() /*: string */ {
   const root = postcss.root({ raws: { after: '\n' } });
   const rule = postcss.rule({ selector: ':root' });
 
-  Object.keys(theme).forEach((key) => {
+  Object.keys(theme).forEach(key => {
     const prop = /^--/.test(key) ? key : `--${key}`;
     const value = theme[key];
 
@@ -33,7 +33,7 @@ function variables()/*: string */ {
  * Read and stream CSS files from given directory.
  * Sort the variables file to be always on top.
  */
-function streams(dir/*: string */)/*: Array<stream$Readable> */ {
+function streams(dir /*: string */) /*: Array<stream$Readable> */ {
   return fs
     .readdirSync(dir)
     .filter(file => path.extname(file) === '.css')
@@ -51,11 +51,8 @@ function streams(dir/*: string */)/*: Array<stream$Readable> */ {
  * Write one variables file per directory.
  * So that we keep the ability to granularly compose a stylesheet.
  */
-function print(target/*: string */)/*: string */ {
-  str2str(
-    variables()
-  )
-  .pipe(
+function print(target /*: string */) /*: string */ {
+  str2str(variables()).pipe(
     fs.createWriteStream(path.join(stylesDir, target, variablesFile))
   );
 
@@ -65,11 +62,8 @@ function print(target/*: string */)/*: string */ {
 /**
  * Concat all modules styles into one stylesheet.
  */
-function concat(target/*: string */)/*: void */ {
-  multistream(
-    streams(path.join(stylesDir, target))
-  )
-  .pipe(
+function concat(target /*: string */) /*: void */ {
+  multistream(streams(path.join(stylesDir, target))).pipe(
     fs.createWriteStream(path.join(stylesDir, `${target}.css`))
   );
 }
