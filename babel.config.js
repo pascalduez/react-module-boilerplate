@@ -21,8 +21,11 @@ const env = (process.env.BABEL_ENV || '').split(',');
  * https://babeljs.io/docs/plugins/transform-class-properties
  * https://babeljs.io/docs/plugins/transform-do-expressions
  *
- * [React/Flow]
+ * [React]
  * https://babeljs.io/docs/plugins/preset-react
+ *
+ * [Flow]
+ * https://babeljs.io/docs/plugins/preset-flow
  */
 
 const presets = [
