@@ -1,9 +1,8 @@
 const env = process.env.NODE_ENV || '';
 
 const config = {
-  roots: [
-    'src',
-  ],
+  roots: ['src'],
+  cacheDirectory: '.jest-cache',
   collectCoverageFrom: [
     'src/**/*.js',
     '!src/**/index.js',
@@ -17,6 +16,7 @@ const config = {
 
 if (env === 'ci') {
   Object.assign(config, {
+    collectCoverage: true,
     coverageDirectory: './reports/coverage',
     testResultsProcessor: './test/report',
   });
