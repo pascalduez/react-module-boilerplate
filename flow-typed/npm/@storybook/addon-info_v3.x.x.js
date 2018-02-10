@@ -1,15 +1,13 @@
-import type { RenderFunction, Story } from '@storybook/react';
+import * as React from 'react';
+import type { Story, RenderFunction } from '@storybook/react';
 
 declare module '@storybook/addon-info' {
-  declare type Renderable = React$Element<any>;
-  declare type RenderFunction = () => Renderable;
-
   declare type Options = {
-    text?: string | Renderable,
+    text?: string | React.Element<any>,
     inline?: boolean,
     header?: boolean,
     source?: boolean,
-    propTables?: ?Array<Renderable>,
+    propTables?: ?Array<React.ComponentType<any>>,
     maxPropsIntoLine?: number,
     maxPropObjectKeys?: number,
     maxPropArrayLength?: number,
@@ -20,7 +18,7 @@ declare module '@storybook/addon-info' {
     storyName: string,
     info: string,
     callback: RenderFunction,
-    options: Options,
+    options: Options
   ): Story;
 
   declare export function withInfo(options: Options): Story;

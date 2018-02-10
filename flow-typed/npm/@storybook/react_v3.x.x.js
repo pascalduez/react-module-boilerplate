@@ -1,15 +1,15 @@
+import * as React from 'react';
 import type { Options as AddonInfoOptions } from '@storybook/addon-info';
 
 type NodeModule = typeof module;
 
 declare module '@storybook/react' {
-  declare type Renderable = React$Element<any>;
-  declare type RenderFunction = () => Renderable;
+  declare type RenderFunction = () => React.Element<any>;
 
   declare type StoryDecorator = (
     story: RenderFunction,
     context: { kind: string, story: string }
-  ) => Renderable | null;
+  ) => React.Element<any> | null;
 
   declare interface Story {
     add(storyName: string, callback: RenderFunction): Story,
