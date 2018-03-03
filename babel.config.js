@@ -13,7 +13,7 @@ const env = (process.env.BABEL_ENV || '').split(',');
  * https://github.com/css-modules/css-modules
  * https://github.com/michalkvasnicak/babel-plugin-css-modules-transform
  *
- * [ES2017+]
+ * [ES2018+]
  * https://babeljs.io/docs/plugins/preset-env
  *
  * [Experimental]
@@ -33,10 +33,10 @@ const presets = [
     '@babel/env',
     {
       targets: {
-        browsers: ['last 2 versions', '> 1%'],
         node: 'current',
       },
       modules: env.includes('cjsm') ? 'commonjs' : false,
+      debug: true,
     },
   ],
   '@babel/react',
