@@ -36,7 +36,6 @@ const presets = [
         node: 'current',
       },
       modules: env.includes('cjsm') ? 'commonjs' : false,
-      debug: true,
     },
   ],
   '@babel/react',
