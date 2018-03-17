@@ -46,26 +46,13 @@ const plugins = [
   '@babel/proposal-object-rest-spread',
   '@babel/proposal-class-properties',
   '@babel/proposal-do-expressions',
+  '@babel/transform-runtime',
 ];
-
-const cssClassPattern = env.includes('cssglobal')
-  ? '[name]-[local]'
-  : '[name]-[local]_[hash:base64:5]';
-
-const cssDistTarget = env.includes('cssglobal')
-  ? './dist/stylesheets/global'
-  : './dist/stylesheets/local';
 
 const cssmPlugin = [
   'css-modules-transform',
   {
-    generateScopedName: cssClassPattern,
-    append: ['./src/theme', 'autoprefixer'],
-    extractCss: {
-      dir: cssDistTarget,
-      relativeRoot: './src/',
-      filename: '[name].css',
-    },
+    generateScopedName: '[name]-[local]',
   },
 ];
 
