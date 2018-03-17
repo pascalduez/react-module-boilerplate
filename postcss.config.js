@@ -4,10 +4,14 @@ const theme = require('./src/theme');
 
 module.exports = ({ options }) => ({
   plugins: {
-    'postcss-custom-properties': {
-      variables: theme,
-      preserve: true,
-      appendVariables: options.appendVariables,
+    'postcss-preset-env': {
+      features: {
+        'css-variables': {
+          variables: theme,
+          preserve: true,
+          appendVariables: options.appendVariables,
+        },
+      },
     },
     autoprefixer: {},
   },
