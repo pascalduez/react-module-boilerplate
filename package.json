@@ -40,6 +40,7 @@
     "typecheck:coverage": "flow-coverage-report -t text -t html -i 'src/**/*.js' -x 'src/**/*.{spec,story}.js'",
     "validate": "run-s lint typecheck",
     "test": "BABEL_ENV=cjsm,cssm jest",
+    "test:cover": "run-s test --coverage",
     "test:ci": "NODE_ENV=ci run-s validate test",
     "pretest:ci": "rm -rf reports/",
     "styleguide": "start-storybook -p 9001 -c .storybook",
