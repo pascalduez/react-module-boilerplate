@@ -1,13 +1,14 @@
-/* eslint-disable global-require */
+/* eslint-disable global-require, no-global-assign */
 
-const theme = require('./src/theme');
+require = require('esm')(module);
+const variables = require('./src/theme').default;
 
 module.exports = ({ options }) => ({
   plugins: {
     'postcss-preset-env': {
       features: {
         'css-variables': {
-          variables: theme,
+          variables,
           preserve: true,
           appendVariables: options.appendVariables,
         },
