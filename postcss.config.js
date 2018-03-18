@@ -3,17 +3,19 @@
 require = require('esm')(module);
 const variables = require('./src/theme').default;
 
-module.exports = ({ options }) => ({
+module.exports = ({ options: { appendVariables = true } }) => ({
   plugins: {
     'postcss-preset-env': {
       features: {
         'css-variables': {
           variables,
+          appendVariables,
           preserve: true,
-          appendVariables: options.appendVariables,
+          warnings: true,
         },
       },
     },
     autoprefixer: {},
+    'postcss-reporter': {},
   },
 });
