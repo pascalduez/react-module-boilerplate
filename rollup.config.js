@@ -1,3 +1,4 @@
+import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
@@ -17,6 +18,7 @@ const plugins = [
     exclude: ['node_modules/**'],
     runtimeHelpers: true,
   }),
+  sizeSnapshot({ treeshake: true }),
 ];
 
 export default [
