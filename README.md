@@ -2,7 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 
-> Sample React presentational components package.  
+> Sample React components package.  
 
 ## About
 
@@ -14,37 +14,37 @@ Strive for keeping things simple and efficient.
 ## Features
 
 JS, ESnext
- * Babel  
- * babel-preset-env
- * Ship both commonjs and ES2015 modules
+ * ES2018+ with `babel-preset-env`
+ * Ship both ESM, commonjs, UMD modules with Rollup
 
 Styling
- * css-modules
- * babel-plugin-css-modules-transform (Webpack free)
- * PostCSS
-    * autoprefixer
+ * CSS modules
+ * CSS next with `postcss-preset-env`
     * custom properties (theming)
+    * Autoprefixer
  * Ship two stylesheets
-    * Local scoped styles (React components)
-    * Global styles (use with own markup, classical template engine)
+    * Local scoped styles
+    * Global styles
  * Ship individual CSS modules
     * Allows for picking just the needed ones
 
 Unit Testing
- * jest
- * enzyme
- * jest-enzyme
- * enzyme-to-json (Snapshots from Enzyme)
+ * Jest
+ * Enzyme
+ * `jest-enzyme`
+ * `enzyme-to-json` (Snapshots from Enzyme)
  * CI reports (tests results, coverage)
+ * `babel-plugin-css-modules-transform` (Test classNames)
 
 Code Quality
- * eslint
- * flow
- * flow-coverage-report
- * stylelint
+ * ESLint
+ * Flow
+ * `flow-coverage-report`
+ * Stylelint
+ * Prettier
 
 Development environment, styleguide
- * storybook
+ * Storybook
 
 
 ## Credits
