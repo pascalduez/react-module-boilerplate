@@ -1,9 +1,9 @@
 {
   "dist/react-module-boilerplate.umd.js": {
-    "bundled": 91161,
-    "minified": 31988,
-    "gzipped": 11295,
-    "treeshaked": 31972
+    "bundled": 92849,
+    "minified": 33059,
+    "gzipped": 11572,
+    "treeshaked": 33043
   },
   "dist/react-module-boilerplate.cjs.js": {
     "bundled": 1527,
