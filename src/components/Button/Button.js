@@ -1,13 +1,13 @@
 /* @flow */
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['primary', 'secondary', 'danger'] }] */
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 
 import styles from './Button.css';
 
 export type Props = {
-  children: Node,
+  children: React.Node,
   theme?: 'primary' | 'secondary' | 'danger',
   handleClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => void,
 };
