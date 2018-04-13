@@ -18,7 +18,7 @@ const plugins = [
     exclude: ['node_modules/**'],
     runtimeHelpers: true,
   }),
-  sizeSnapshot({ treeshake: true }),
+  sizeSnapshot(),
 ];
 
 export default [

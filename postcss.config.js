@@ -7,7 +7,7 @@ module.exports = ({ options: { appendVariables = true } }) => ({
   plugins: {
     'postcss-preset-env': {
       features: {
-        'css-variables': {
+        'custom-properties': {
           variables,
           appendVariables,
           preserve: true,
