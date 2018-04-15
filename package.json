@@ -43,7 +43,7 @@
     "test:cover": "run-s test --coverage",
     "test:ci": "NODE_ENV=ci run-s validate test",
     "pretest:ci": "rm -rf reports/",
-    "styleguide": "start-storybook -p 9001 -c .storybook",
+    "styleguide": "start-storybook -p 1337 -c .storybook",
     "clean": "rm -r dist/ coverage/ reports/ flow-coverage/",
     "build:flow": "flow-copy-source -v -i '**/*.{story,spec}.js' src/ dist/cjsm",
     "build": "rollup -c",
