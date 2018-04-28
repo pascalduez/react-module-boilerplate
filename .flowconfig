@@ -10,6 +10,7 @@ flow-typed
 
 [lints]
 all=warn
+inexact-spread=off
 
 [options]
 include_warnings=true
