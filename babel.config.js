@@ -52,7 +52,6 @@ module.exports = api => {
   const presets = [['@babel/env', envOpts], '@babel/react', '@babel/flow'];
 
   const plugins = [
-    '@babel/proposal-object-rest-spread',
     '@babel/proposal-class-properties',
     '@babel/proposal-do-expressions',
     '@babel/transform-runtime',
