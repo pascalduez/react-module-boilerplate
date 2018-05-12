@@ -15,7 +15,6 @@ module.exports = ({ options: { appendVariables = true } }) => ({
         },
       },
     },
-    autoprefixer: {},
     'postcss-reporter': {},
   },
 });
