@@ -12,6 +12,10 @@ const config = {
   ],
   setupFiles: ['./test/setup'],
   setupTestFrameworkScriptFile: 'jest-enzyme',
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+  ],
 };
 
 if (env === 'ci') {
