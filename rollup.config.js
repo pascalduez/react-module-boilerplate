@@ -21,24 +21,22 @@ const plugins = [
   sizeSnapshot(),
 ];
 
-export default [
-  {
-    plugins,
-    input: 'src/index.js',
-    output: [
-      {
-        file: pkg.browser,
-        name: pkg.name,
-        format: 'umd',
-      },
-      {
-        file: pkg.main,
-        format: 'cjs',
-      },
-      {
-        file: pkg.module,
-        format: 'es',
-      },
-    ],
-  },
-];
+export default {
+  plugins,
+  input: 'src/index.js',
+  output: [
+    {
+      file: pkg.browser,
+      name: pkg.name,
+      format: 'umd',
+    },
+    {
+      file: pkg.main,
+      format: 'cjs',
+    },
+    {
+      file: pkg.module,
+      format: 'es',
+    },
+  ],
+};
