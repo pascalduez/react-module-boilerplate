@@ -1,4 +1,5 @@
 const env = process.env.NODE_ENV || '';
+const pkg = require('./package.json');
 
 const config = {
   roots: ['src'],
@@ -23,6 +24,16 @@ if (env === 'ci') {
     collectCoverage: true,
     coverageDirectory: './reports/coverage',
     testResultsProcessor: './test/report',
+    reporters: [
+      'default',
+      [
+        'jest-junit',
+        {
+          suiteName: `${pkg.name} unit tests`,
+          output: './reports/junit-report.xml',
+        },
+      ],
+    ],
   });
 }
 
