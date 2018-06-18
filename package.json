@@ -92,7 +92,7 @@
     "flow-coverage-report": "^0.5.0",
     "jest": "^23.1.0",
     "jest-enzyme": "^6.0.1",
-    "jest-html-reporter": "^2.3.0",
+    "jest-html-reporter": "^2.4.0",
     "jest-junit": "^5.0.0",
     "jest-watch-typeahead": "^0.1.0",
     "multistream": "^2.1.1",

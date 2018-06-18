@@ -23,7 +23,6 @@ if (env === 'ci') {
   Object.assign(config, {
     collectCoverage: true,
     coverageDirectory: './reports/coverage',
-    testResultsProcessor: './test/report',
     reporters: [
       'default',
       [
@@ -31,6 +30,13 @@ if (env === 'ci') {
         {
           suiteName: `${pkg.name} unit tests`,
           output: './reports/junit-report.xml',
+        },
+      ],
+      [
+        'jest-html-reporter',
+        {
+          pageTitle: `${pkg.name} unit tests`,
+          outputPath: './reports/output-report.html',
         },
       ],
     ],
