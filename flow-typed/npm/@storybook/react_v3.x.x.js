@@ -1,27 +1,20 @@
-import * as React from 'react';
-import type { Options as AddonInfoOptions } from '@storybook/addon-info';
+// flow-typed signature: c2e1b132d2729c977d6b3e54e0134de5
+// flow-typed version: 1709d3212d/@storybook/react_v3.x.x/flow_>=v0.28.x
 
 type NodeModule = typeof module;
 
 declare module '@storybook/react' {
-  declare type RenderFunction = () => React.Element<any>;
+  declare type Renderable = React$Element<any>;
+  declare type RenderFunction = () => Renderable;
 
   declare type StoryDecorator = (
     story: RenderFunction,
     context: { kind: string, story: string }
-  ) => React.Element<any> | null;
+  ) => Renderable | null;
 
   declare interface Story {
     add(storyName: string, callback: RenderFunction): Story,
     addDecorator(decorator: StoryDecorator): Story,
-
-    // Addons
-    addWithInfo(
-      storyName: string,
-      info: string,
-      callback: RenderFunction,
-      options: AddonInfoOptions
-    ): Story;
   }
 
   declare interface StoryObject {
