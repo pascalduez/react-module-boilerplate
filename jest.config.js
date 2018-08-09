@@ -13,6 +13,7 @@ const config = {
   ],
   setupFiles: ['./test/setup'],
   setupTestFrameworkScriptFile: 'jest-enzyme',
+  testURL: 'http://localhost',
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
