@@ -23,12 +23,7 @@
     "url": "git://github.com/pascalduez/react-module-boilerplate.git"
   },
   "license": "Unlicense",
-  "files": [
-    "dist",
-    "index.js",
-    "README.md",
-    "UNLICENSE"
-  ],
+  "files": ["dist", "src", "README.md", "UNLICENSE"],
   "main": "dist/react-module-boilerplate.cjs.js",
   "module": "dist/react-module-boilerplate.esm.js",
   "browser": "dist/react-module-boilerplate.umd.js",
@@ -37,7 +32,8 @@
     "lint:js": "eslint src/",
     "lint": "run-s lint:*",
     "typecheck": "flow check src/",
-    "typecheck:coverage": "flow-coverage-report -t text -t html -i 'src/**/*.js' -x 'src/**/*.{spec,story}.js'",
+    "typecheck:coverage":
+      "flow-coverage-report -t text -t html -i 'src/**/*.js' -x 'src/**/*.{spec,story}.js'",
     "validate": "run-s lint typecheck",
     "test": "BABEL_ENV=test jest",
     "test:cover": "run-s test --coverage",
@@ -45,9 +41,10 @@
     "pretest:ci": "rm -rf reports/",
     "styleguide": "start-storybook -p 1337 -c .storybook",
     "clean": "rm -r dist/ coverage/ reports/ flow-coverage/",
-    "build:flow": "flow-copy-source -v -i '**/*.{story,spec}.js' src/ dist/cjsm",
     "build": "rollup -c",
     "prebuild": "rm -rf dist/",
+    "postbuild":
+      "echo \"// @flow\nexport * from '../src/index.js';\" > ./dist/react-module-boilerplate.cjs.js.flow",
     "prepare": "run-s build",
     "prepublishOnly": "run-s validate test:cover"
   },
