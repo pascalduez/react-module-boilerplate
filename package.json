@@ -41,10 +41,11 @@
     "pretest:ci": "rm -rf reports/",
     "styleguide": "start-storybook -p 1337 -c .storybook",
     "clean": "rm -r dist/ coverage/ reports/ flow-coverage/",
+    "build:flow":
+      "echo \"// @flow\n\nexport * from '../src'\" > dist/react-module-boilerplate.cjs.js.flow",
     "build": "rollup -c",
     "prebuild": "rm -rf dist/",
-    "postbuild":
-      "echo \"// @flow\nexport * from '../src/index.js';\" > ./dist/react-module-boilerplate.cjs.js.flow",
+    "postbuild": "run-s build:flow",
     "prepare": "run-s build",
     "prepublishOnly": "run-s validate test:cover"
   },
