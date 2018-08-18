@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs/react';
 import { checkA11y } from '@storybook/addon-a11y';
 
 import Header from './Header';
