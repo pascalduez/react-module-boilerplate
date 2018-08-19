@@ -1,13 +1,11 @@
-// flow-typed signature: 0a0dd8f8f78af8d88481776d52e6f093
-// flow-typed version: e3482a1fa4/@storybook/addon-a11y_v3.x.x/flow_>=v0.53.x
-
 declare module '@storybook/addon-a11y' {
-  declare type Renderable = React$ElementType;
+  declare type Context = { kind: string, story: string };
+  declare type Renderable = React$Element<*>;
   declare type RenderFunction = () => Renderable | Array<Renderable>;
 
   declare type StoryDecorator = (
     story: RenderFunction,
-    context: { kind: string, story: string }
+    context: Context
   ) => Renderable | null;
 
   declare type AxeCheck = {
