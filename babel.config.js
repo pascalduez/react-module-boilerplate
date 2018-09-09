@@ -1,71 +1,61 @@
 /**
+ * [ES2018+]
+ * https://babeljs.io/docs/en/babel-preset-env
+ *
+ * [Proposals]
+ * https://babeljs.io/docs/en/babel-plugin-syntax-dynamic-import
+ * https://babeljs.io/docs/en/babel-plugin-proposal-class-properties
+ * https://babeljs.io/docs/en/babel-plugin-proposal-decorators
+ *
+ * [React]
+ * https://babeljs.io/docs/en/babel-preset-react
+ *
+ * [Flow]
+ * https://babeljs.io/docs/en/babel-preset-flow
+ *
+ * [Other]
+ * https://babeljs.io/docs/en/babel-plugin-transform-runtime
+ *
  * [CSS modules]
  * https://github.com/css-modules/css-modules
  * https://github.com/michalkvasnicak/babel-plugin-css-modules-transform
- *
- * [ES2018+]
- * https://babeljs.io/docs/plugins/preset-env
- *
- * [Experimental]
- * https://babeljs.io/docs/plugins/transform-object-rest-spread
- * https://babeljs.io/docs/plugins/transform-class-properties
- * https://babeljs.io/docs/plugins/transform-do-expressions
- *
- * [React]
- * https://babeljs.io/docs/plugins/preset-react
- *
- * [Flow]
- * https://babeljs.io/docs/plugins/preset-flow
  */
 
 module.exports = api => {
   const env = api.env();
 
-  let envOpts = {};
+  let envOpts = {
+    modules: false,
+  };
 
-  switch (env) {
-    case 'production':
-      envOpts = {
-        modules: false,
-        targets: {
-          node: 8,
-        },
-      };
-      break;
-    case 'test':
-      envOpts = {
-        modules: 'commonjs',
-        targets: {
-          node: 'current',
-        },
-      };
-      break;
-    default:
-      envOpts = {
-        modules: false,
-        targets: {
-          node: 'current',
-        },
-      };
-  }
+  let runtimeOps = {
+    corejs: 2,
+    helpers: true,
+    regenerator: true,
+    useESModules: true,
+  };
 
-  const presets = [['@babel/env', envOpts], '@babel/react', '@babel/flow'];
-
-  const plugins = [
-    '@babel/proposal-class-properties',
-    '@babel/proposal-do-expressions',
-    '@babel/transform-runtime',
+  const presets = [
+    ['@babel/preset-env', envOpts],
+    '@babel/preset-react',
+    '@babel/preset-flow',
   ];
 
-  const cssmPlugin = [
-    'css-modules-transform',
-    {
-      generateScopedName: '[name]-[local]',
-    },
+  const plugins = [
+    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-do-expressions',
+    ['@babel/plugin-transform-runtime', runtimeOps],
   ];
 
   if (env === 'test') {
-    plugins.push(cssmPlugin);
+    envOpts.modules = 'commonjs';
+    runtimeOps.useESModules = false;
+    plugins.push([
+      'babel-plugin-css-modules-transform',
+      {
+        generateScopedName: '[name]-[local]',
+      },
+    ]);
   }
 
   return {
