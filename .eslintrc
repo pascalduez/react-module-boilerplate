@@ -19,6 +19,7 @@ env:
   jest: true
 
 rules:
+  prefer-const: off
   comma-dangle:
     - error
     - arrays: "always-multiline"

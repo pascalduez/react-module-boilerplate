@@ -22,7 +22,7 @@
  */
 
 module.exports = api => {
-  const env = api.env();
+  let env = api.env();
 
   let envOpts = {
     modules: false,
@@ -35,13 +35,13 @@ module.exports = api => {
     useESModules: true,
   };
 
-  const presets = [
+  let presets = [
     ['@babel/preset-env', envOpts],
     '@babel/preset-react',
     '@babel/preset-flow',
   ];
 
-  const plugins = [
+  let plugins = [
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-do-expressions',
     ['@babel/plugin-transform-runtime', runtimeOps],

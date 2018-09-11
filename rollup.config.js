@@ -6,7 +6,7 @@ import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 
-const plugins = [
+let plugins = [
   peerDepsExternal(),
   postcss({
     modules: true,
