@@ -1,3 +1,6 @@
+// flow-typed signature: 1aeadf523ef2d96985697463dd71c89d
+// flow-typed version: 35108faf5b/@storybook/react_v3.x.x/flow_>=v0.72.x
+
 type NodeModule = typeof module;
 
 declare module '@storybook/react' {

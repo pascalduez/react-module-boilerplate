@@ -1,3 +1,6 @@
+// flow-typed signature: 9c1ab3525378c509e969778c18af18b7
+// flow-typed version: ae374bc338/@storybook/addon-knobs_v3.x.x/flow_vx.x.x
+
 declare module "@storybook/addon-knobs/react" {
   declare type Context = { kind: string, story: string };
   declare type Renderable = React$Element<*>;

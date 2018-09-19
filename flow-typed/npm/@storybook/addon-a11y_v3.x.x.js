@@ -1,3 +1,6 @@
+// flow-typed signature: 56dc5bc86fec2d6287b51039aba84313
+// flow-typed version: f7a6cce046/@storybook/addon-a11y_v3.x.x/flow_>=v0.25.x
+
 declare module '@storybook/addon-a11y' {
   declare type Context = { kind: string, story: string };
   declare type Renderable = React$Element<*>;
