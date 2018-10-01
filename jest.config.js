@@ -8,7 +8,6 @@ const config = {
     'src/**/*.js',
     '!src/**/index.js',
     '!src/**/*.story.js',
-    '!src/**/*.type.js',
     '!src/**/stories/*.js',
   ],
   setupFiles: ['./test/setup'],
