@@ -31,13 +31,6 @@ module.exports = baseConfig => {
       },
       {
         loader: 'postcss-loader',
-        options: {
-          config: {
-            ctx: {
-              appendVariables: true,
-            },
-          },
-        },
       },
     ],
   });

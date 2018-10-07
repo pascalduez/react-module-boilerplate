@@ -10,7 +10,7 @@ let plugins = [
   peerDepsExternal(),
   postcss({
     modules: true,
-    extract: true,
+    extract: `dist/${pkg.name}.css`,
   }),
   babel({
     exclude: ['node_modules/**'],
