@@ -1,6 +1,8 @@
 import { configure } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 
+import '../src/styles/variables.css';
+
 setOptions({
   name: 'React module boilerplate',
   downPanelInRight: true,
