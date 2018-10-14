@@ -11,7 +11,7 @@ describe('<Button>', () => {
   it('should render the default markup', () => {
     const wrapper = shallow(<Button>test</Button>);
 
-    expect(wrapper).toHaveTagName('button');
+    expect(wrapper).toHaveDisplayName('button');
     expect(wrapper).toHaveText('test');
   });
 

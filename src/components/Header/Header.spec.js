@@ -10,8 +10,8 @@ describe('<Header>', () => {
   it('should render the default markup', () => {
     const wrapper = shallow(<Header title="test" />);
 
-    expect(wrapper).toHaveTagName('header');
-    expect(wrapper.childAt(0)).toHaveTagName('h1');
+    expect(wrapper).toHaveDisplayName('header');
+    expect(wrapper.childAt(0)).toHaveDisplayName('h1');
     expect(wrapper.childAt(0)).toHaveText('test');
   });
 
