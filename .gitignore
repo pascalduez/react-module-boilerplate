@@ -6,3 +6,4 @@ flow-coverage
 .eslintcache
 .jest-cache
 .size-snapshot.json
+.cache
