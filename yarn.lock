@@ -11713,6 +11713,13 @@ stylelint-config-standard@^18.2.0:
   dependencies:
     stylelint-config-recommended "^2.1.0"
 
+stylelint-value-no-unknown-custom-properties@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-value-no-unknown-custom-properties/-/stylelint-value-no-unknown-custom-properties-2.0.0.tgz#0c2559061a5bda76939e7fece511c11d7faf62ed"
+  integrity sha512-iA7pLNBRCrRi35rUpF3bS4zpPWQtk1YxqKC0MhgOvhI1XDciE/FaAQoFgn65vGMEyQ0Q3PPGfWawn7sVd/thXQ==
+  dependencies:
+    postcss-values-parser "^2.0.0"
+
 stylelint@^9.7.1:
   version "9.7.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.7.1.tgz#522f8795832a9f7e062e5e4105c0e05fb53f827f"
