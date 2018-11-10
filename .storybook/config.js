@@ -1,13 +1,15 @@
-import { configure } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { addDecorator, configure } from '@storybook/react';
+import { withOptions } from '@storybook/addon-options';
 
 import '../src/styles/variables.css';
 
-setOptions({
-  name: 'React module boilerplate',
-  downPanelInRight: true,
-  sidebarAnimations: true,
-});
+addDecorator(
+  withOptions({
+    name: 'React module boilerplate',
+    addonPanelInRight: true,
+    sidebarAnimations: true,
+  })
+);
 
 const req = require.context('../src/components', true, /.story.js$/);
 
