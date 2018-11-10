@@ -38,6 +38,6 @@ describe('<Button>', () => {
 
     wrapper.simulate('click');
 
-    expect(spy).toBeCalled();
+    expect(spy).toHaveBeenCalled();
   });
 });
