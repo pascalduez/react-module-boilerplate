@@ -15,7 +15,7 @@
     "jest": true
   },
   "rules": {
-    "prefer-const": false,
+    "prefer-const": "off",
     "comma-dangle": [
       "error",
       {
@@ -32,8 +32,8 @@
         "ignoreRestSiblings": true
       }
     ],
-    "react/require-default-props": false,
-    "react/jsx-wrap-multilines": false,
+    "react/require-default-props": "off",
+    "react/jsx-wrap-multilines": "off",
     "react/jsx-filename-extension": [
       "error",
       {
