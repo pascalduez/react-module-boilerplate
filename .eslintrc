@@ -1,54 +1,64 @@
----
-root: true
-parser: "babel-eslint"
-extends:
-  - "airbnb"
-  - "plugin:flowtype/recommended"
-  - "plugin:css-modules/recommended"
-  - "plugin:jest/recommended"
-  - "prettier"
-  - "prettier/flowtype"
-  - "prettier/react"
-
-plugins:
-  - "flowtype"
-  - "css-modules"
-  - "jest"
-
-env:
-  jest: true
-
-rules:
-  prefer-const: off
-  comma-dangle:
-    - error
-    - arrays: "always-multiline"
-      objects: "always-multiline"
-      imports: "always-multiline"
-      exports: "always-multiline"
-      functions: ignore
-  no-unused-vars:
-    - error
-    - ignoreRestSiblings: true
-
-  react/require-default-props: off
-  react/jsx-wrap-multilines: off
-  react/jsx-filename-extension:
-    - error
-    - extensions:
-      - ".js"
-      - ".jsx"
-  react/sort-comp:
-    - error
-    - order:
-      - "type-annotations"
-      - "static-methods"
-      - "lifecycle"
-      - "everything-else"
-      - "render"
-
-  import/no-extraneous-dependencies:
-    - error
-    - devDependencies: true
-      optionalDependencies: false
-      peerDependencies: false
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "plugin:css-modules/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "plugins": ["flowtype", "css-modules", "jest"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "prefer-const": false,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "react/require-default-props": false,
+    "react/jsx-wrap-multilines": false,
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/sort-comp": [
+      "error",
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ]
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
+  }
+}

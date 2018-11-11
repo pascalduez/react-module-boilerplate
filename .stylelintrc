@@ -4,10 +4,7 @@
     "stylelint-config-css-modules",
     "stylelint-config-prettier"
   ],
-  "plugins": [
-    "stylelint-value-no-unknown-custom-properties",
-    "stylelint-a11y"
-  ],
+  "plugins": ["stylelint-value-no-unknown-custom-properties", "stylelint-a11y"],
   "rules": {
     "csstools/value-no-unknown-custom-properties": [
       true,
