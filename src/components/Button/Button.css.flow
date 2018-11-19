@@ -1,0 +1,8 @@
+// @flow
+
+declare module.exports: $ReadOnly<{
+  root: string,
+  primary: string,
+  secondary: string,
+  danger: string,
+}>;

@@ -16,7 +16,6 @@ inexact-spread=off
 include_warnings=true
 esproposal.class_static_fields=enable
 module.ignore_non_literal_requires=true
-module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/interfaces/CSSModule.js'
 
 [strict]
 deprecated-type
