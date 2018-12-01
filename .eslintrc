@@ -10,7 +10,7 @@
     "prettier/flowtype",
     "prettier/react"
   ],
-  "plugins": ["flowtype", "css-modules", "jest"],
+  "plugins": ["babel", "flowtype", "css-modules", "jest"],
   "env": {
     "jest": true
   },
@@ -26,12 +26,14 @@
         "functions": "ignore"
       }
     ],
+    "no-unused-expressions": "off",
     "no-unused-vars": [
       "error",
       {
         "ignoreRestSiblings": true
       }
     ],
+    "babel/no-unused-expressions": "error",
     "react/require-default-props": "off",
     "react/jsx-wrap-multilines": "off",
     "react/jsx-filename-extension": [
