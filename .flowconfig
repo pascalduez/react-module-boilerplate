@@ -16,6 +16,7 @@ inexact-spread=off
 include_warnings=true
 esproposal.class_static_fields=enable
 module.ignore_non_literal_requires=true
+sharedmemory.hash_table_pow=21
 
 [strict]
 deprecated-type
