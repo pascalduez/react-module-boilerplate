@@ -1,5 +1,5 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-// import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
+import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
@@ -18,7 +18,7 @@ let plugins = [
   }),
   resolve(),
   commonjs(),
-  // sizeSnapshot(),
+  sizeSnapshot(),
 ];
 
 export default {
