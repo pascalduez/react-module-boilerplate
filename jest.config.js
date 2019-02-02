@@ -2,17 +2,15 @@ const env = process.env.NODE_ENV || '';
 const pkg = require('./package.json');
 
 const config = {
-  roots: ['src'],
   cacheDirectory: '.jest-cache',
   collectCoverageFrom: [
     'src/**/*.js',
-    '!src/**/index.js',
-    '!src/**/*.story.js',
-    '!src/**/stories/*.js',
+    '!**/index.js',
+    '!**/*.story.js',
+    '!**/stories/*.js',
   ],
   setupFiles: ['./test/setup'],
-  setupTestFrameworkScriptFile: 'jest-enzyme',
-  testURL: 'http://localhost',
+  setupFilesAfterEnv: ['jest-enzyme'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
