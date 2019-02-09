@@ -4,7 +4,7 @@
 /* eslint-disable react/button-has-type */
 
 import * as React from 'react';
-import classNames from 'classnames';
+import clsx from 'clsx';
 
 import styles from './Button.css';
 
@@ -18,7 +18,7 @@ export type Props = {
 function Button({ children, theme, type, handleClick, ...extraProps }: Props) {
   return (
     <button
-      className={classNames(styles.root, styles[theme])}
+      className={clsx(styles.root, styles[theme])}
       onClick={handleClick}
       type={type}
       {...extraProps}

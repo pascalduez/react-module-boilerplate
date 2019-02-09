@@ -77,7 +77,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-css-modules-transform": "^1.6.2",
-    "classnames": "^2.2.6",
+    "clsx": "^1.0.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint": "^5.13.0",
@@ -124,7 +124,7 @@
   },
   "peerDependencies": {
     "@babel/runtime-corejs2": "^7.0.0",
-    "classnames": "^2.0.0",
+    "clsx": "^1.0.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   }
