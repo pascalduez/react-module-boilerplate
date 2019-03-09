@@ -1,7 +1,11 @@
 /* eslint-disable no-param-reassign */
 
-module.exports = baseConfig => {
-  baseConfig.module.rules.push({
+module.exports = ({ config, mode }) => {
+  config.module.rules = config.module.rules.filter(
+    rule => rule.test.toString() !== '/\\.css$/'
+  );
+
+  config.module.rules.push({
     test: /\.css$/,
     use: [
       {
@@ -21,5 +25,5 @@ module.exports = baseConfig => {
     ],
   });
 
-  return baseConfig;
+  return config;
 };
