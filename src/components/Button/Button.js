@@ -10,16 +10,22 @@ import styles from './Button.css';
 
 export type Props = {
   children: React.Node,
-  theme: 'primary' | 'secondary' | 'danger',
-  type: 'submit' | 'button' | 'reset',
-  handleClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => void,
+  theme?: 'primary' | 'secondary' | 'danger',
+  type?: 'submit' | 'button' | 'reset',
+  onClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => void,
 };
 
-function Button({ children, theme, type, handleClick, ...extraProps }: Props) {
+function Button({
+  children,
+  theme = 'primary',
+  type = 'submit',
+  onClick,
+  ...extraProps
+}: Props) {
   return (
     <button
       className={clsx(styles.root, styles[theme])}
-      onClick={handleClick}
+      onClick={onClick}
       type={type}
       {...extraProps}
     >
@@ -27,10 +33,5 @@ function Button({ children, theme, type, handleClick, ...extraProps }: Props) {
     </button>
   );
 }
-
-Button.defaultProps = {
-  theme: 'primary',
-  type: 'submit',
-};
 
 export default Button;
