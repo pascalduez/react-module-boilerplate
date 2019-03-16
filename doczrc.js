@@ -2,6 +2,7 @@ import { css } from 'docz-plugin-css';
 
 export default {
   title: 'React module boilerplate',
+  src: './src',
   plugins: [
     css({
       preprocessor: 'postcss',
