@@ -10,7 +10,6 @@ flow-typed
 
 [lints]
 all=warn
-inexact-spread=off
 dynamic-export=off
 
 [options]

@@ -25,7 +25,7 @@ storiesOf('Button', module)
     </Button>
   ))
   .add('handleClick property', () => (
-    <Button handleClick={action('Hello from click handler')}>Click me!</Button>
+    <Button onClick={action('Hello from click handler')}>Click me!</Button>
   ))
   .add(
     'Default usage',

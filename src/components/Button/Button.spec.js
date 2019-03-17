@@ -34,7 +34,7 @@ describe('<Button>', () => {
 
   it('should trigger click event handlers', () => {
     const spy = jest.fn();
-    const wrapper = mount(<Button handleClick={spy}>test</Button>);
+    const wrapper = mount(<Button onClick={spy}>test</Button>);
 
     wrapper.simulate('click');
 
