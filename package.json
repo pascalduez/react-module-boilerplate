@@ -32,6 +32,9 @@
   "main": "dist/react-module-boilerplate.cjs.js",
   "module": "dist/react-module-boilerplate.esm.js",
   "browser": "dist/react-module-boilerplate.umd.js",
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "eslint src/",
