@@ -13,6 +13,7 @@ export type Props = {
   theme?: 'primary' | 'secondary' | 'danger',
   type?: 'submit' | 'button' | 'reset',
   onClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => void,
+  ...
 };
 
 function Button({

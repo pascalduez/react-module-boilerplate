@@ -1,5 +1,5 @@
-// flow-typed signature: 5e6579f3af61798ccdfbb047c2c72516
-// flow-typed version: 2750495c3d/sponge_v0.1.x/flow_vx.x.x
+// flow-typed signature: 905be200a0a4ae64bcfcae1292e5e2ed
+// flow-typed version: c6154227d1/sponge_v0.1.x/flow_>=v0.104.x
 
 declare module "sponge" {
   declare function sponge(): stream$Transform;

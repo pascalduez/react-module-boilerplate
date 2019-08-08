@@ -6,6 +6,7 @@ import styles from './Header.css';
 
 export type Props = {
   title: string,
+  ...
 };
 
 function Header({ title, ...extraProps }: Props) {
