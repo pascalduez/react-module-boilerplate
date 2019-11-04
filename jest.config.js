@@ -2,14 +2,15 @@ const env = process.env.NODE_ENV || '';
 const pkg = require('./package.json');
 
 const config = {
-  cacheDirectory: '.jest-cache',
+  cacheDirectory: '<rootDir>/.jest-cache',
+  coverageDirectory: '<rootDir>/reports/coverage',
   collectCoverageFrom: [
     'src/**/*.js',
     '!**/index.js',
     '!**/*.story.js',
     '!**/stories/*.js',
   ],
-  setupFiles: ['./test/setup'],
+  setupFiles: ['<rootDir>/jest.setup.js'],
   setupFilesAfterEnv: ['jest-enzyme'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
@@ -19,22 +20,23 @@ const config = {
 
 if (env === 'ci') {
   Object.assign(config, {
+    cache: false,
     collectCoverage: true,
-    coverageDirectory: './reports/coverage',
     reporters: [
       'default',
       [
         'jest-junit',
         {
           suiteName: `${pkg.name} unit tests`,
-          output: './reports/junit-report.xml',
+          outputDirectory: '<rootDir>/reports',
+          outputName: 'junit-report.xml',
         },
       ],
       [
         'jest-html-reporter',
         {
           pageTitle: `${pkg.name} unit tests`,
-          outputPath: './reports/output-report.html',
+          outputPath: '<rootDir>/reports/output-report.html',
         },
       ],
     ],

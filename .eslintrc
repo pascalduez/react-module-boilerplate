@@ -36,6 +36,7 @@
     "babel/no-unused-expressions": "error",
     "react/require-default-props": "off",
     "react/jsx-wrap-multilines": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
       "error",
       {
