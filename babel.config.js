@@ -33,7 +33,7 @@ module.exports = api => {
     helpers: true,
     regenerator: true,
     useESModules: true,
-    version: '7.5.0',
+    version: '7.6.0',
   };
 
   let presets = [

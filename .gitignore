@@ -7,4 +7,3 @@ flow-coverage
 .jest-cache
 .size-snapshot.json
 .cache
-.docz

@@ -12,7 +12,7 @@ export type Props = {
   children: React.Node,
   theme?: 'primary' | 'secondary' | 'danger',
   type?: 'submit' | 'button' | 'reset',
-  onClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => void,
+  onClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => mixed,
   ...
 };
 
@@ -20,13 +20,11 @@ function Button({
   children,
   theme = 'primary',
   type = 'submit',
-  onClick,
   ...extraProps
 }: Props) {
   return (
     <button
       className={clsx(styles.root, styles[theme])}
-      onClick={onClick}
       type={type}
       {...extraProps}
     >
