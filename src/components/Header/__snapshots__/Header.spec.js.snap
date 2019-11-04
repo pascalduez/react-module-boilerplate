@@ -2,13 +2,13 @@
 
 exports[`<Header> should render the default markup and classes [snapshot] 1`] = `
 <header
-  className="Header-root"
+  class="Header-root"
   role="banner"
 >
   <h1
-    className="Header-title"
+    class="Header-title"
   >
-    test
+    Test
   </h1>
 </header>
 `;

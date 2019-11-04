@@ -1,32 +1,35 @@
 // @flow
 
 import * as React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 
 import Header from './Header';
 import styles from './Header.css';
 
 describe('<Header>', () => {
   it('should render the default markup', () => {
-    const wrapper = shallow(<Header title="test" />);
+    const { container, getByText } = render(<Header title="Test" />);
 
-    expect(wrapper).toHaveDisplayName('header');
-    expect(wrapper.childAt(0)).toHaveDisplayName('h1');
-    expect(wrapper.childAt(0)).toHaveText('test');
+    const title = getByText('Test');
+
+    expect(container.firstChild.tagName).toBe('HEADER');
+    expect(title.tagName).toBe('H1');
   });
 
   it('should render the default classes', () => {
-    const wrapper = shallow(<Header title="test" />);
+    const { container, getByText } = render(<Header title="Test" />);
 
-    expect(wrapper).toHaveClassName(styles.root);
-    expect(wrapper.childAt(0)).toHaveClassName(styles.title);
+    const title = getByText('Test');
+
+    expect(container.firstChild).toHaveClass(styles.root);
+    expect(title).toHaveClass(styles.title);
   });
 
   // Which is equivalent to:
 
   it('should render the default markup and classes [snapshot]', () => {
-    const wrapper = shallow(<Header title="test" />);
+    const { container } = render(<Header title="Test" />);
 
-    expect(wrapper).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

@@ -32,9 +32,8 @@ Styling
 Unit Testing
 
 - Jest
-- Enzyme
-- `jest-enzyme`
-- `enzyme-to-json` (Snapshots from Enzyme)
+- testing-library/react
+- testing-library/jest-dom
 - CI reports (tests results, coverage)
 - `babel-plugin-css-modules-transform` (Test classNames)
 

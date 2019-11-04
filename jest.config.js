@@ -10,8 +10,7 @@ const config = {
     '!**/*.story.js',
     '!**/stories/*.js',
   ],
-  setupFiles: ['<rootDir>/jest.setup.js'],
-  setupFilesAfterEnv: ['jest-enzyme'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',

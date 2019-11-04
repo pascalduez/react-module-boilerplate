@@ -2,9 +2,9 @@
 
 exports[`<Button> should render the default markup and classes [snapshot] 1`] = `
 <button
-  className="Button-root Button-primary"
+  class="Button-root Button-primary"
   type="submit"
 >
-  test
+  Test
 </button>
 `;

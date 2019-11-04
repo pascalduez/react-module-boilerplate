@@ -2,41 +2,46 @@
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['secondary', 'danger'] }] */
 
 import * as React from 'react';
-import { shallow, mount } from 'enzyme';
+import { render, fireEvent } from '@testing-library/react';
 
 import Button from './Button';
 import styles from './Button.css';
 
 describe('<Button>', () => {
   it('should render the default markup', () => {
-    const wrapper = shallow(<Button>test</Button>);
+    const { getByText } = render(<Button>Test</Button>);
 
-    expect(wrapper).toHaveDisplayName('button');
-    expect(wrapper).toHaveText('test');
+    const button = getByText('Test');
+
+    expect(button.tagName).toBe('BUTTON');
   });
 
   it('should render the default classes', () => {
-    const wrapper = shallow(<Button>test</Button>);
+    const { getByText } = render(<Button>Test</Button>);
 
-    expect(wrapper).toHaveClassName(styles.root);
-    expect(wrapper).toHaveClassName(styles.primary);
+    const button = getByText('Test');
+
+    expect(button).toHaveClass(styles.root);
+    expect(button).toHaveClass(styles.primary);
   });
 
   // Which is equivalent to:
 
   it('should render the default markup and classes [snapshot]', () => {
-    const wrapper = shallow(<Button>test</Button>);
+    const { container } = render(<Button>Test</Button>);
 
-    expect(wrapper).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   // Event handlers.
 
   it('should trigger click event handlers', () => {
     const spy = jest.fn();
-    const wrapper = mount(<Button onClick={spy}>test</Button>);
+    const { getByText } = render(<Button onClick={spy}>Test</Button>);
 
-    wrapper.simulate('click');
+    const button = getByText('Test');
+
+    fireEvent.click(button);
 
     expect(spy).toHaveBeenCalled();
   });
