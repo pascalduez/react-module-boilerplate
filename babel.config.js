@@ -1,6 +1,7 @@
 /**
  * [ES2018+]
  * https://babeljs.io/docs/en/babel-preset-env
+ * https://github.com/babel/preset-modules
  *
  * [Proposals]
  * https://babeljs.io/docs/en/babel-plugin-syntax-dynamic-import
@@ -24,10 +25,6 @@
 module.exports = api => {
   let env = api.env();
 
-  let envOpts = {
-    modules: false,
-  };
-
   let runtimeOps = {
     corejs: 2,
     helpers: true,
@@ -37,7 +34,7 @@ module.exports = api => {
   };
 
   let presets = [
-    ['@babel/preset-env', envOpts],
+    '@babel/preset-modules',
     '@babel/preset-react',
     '@babel/preset-flow',
   ];
@@ -51,9 +48,8 @@ module.exports = api => {
   ];
 
   if (env === 'test') {
-    envOpts.modules = 'commonjs';
     runtimeOps.useESModules = false;
-    plugins.push([
+    plugins.push('@babel/plugin-transform-modules-commonjs', [
       'babel-plugin-css-modules-transform',
       {
         generateScopedName: '[name]-[local]',
