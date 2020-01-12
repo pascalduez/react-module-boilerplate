@@ -12,24 +12,23 @@ export type Props = {
   children: React.Node,
   theme?: 'primary' | 'secondary' | 'danger',
   type?: 'submit' | 'button' | 'reset',
-  onClick?: (evt?: SyntheticEvent<HTMLButtonElement>) => mixed,
+  className?: string,
+  onClick?: (evt: SyntheticEvent<HTMLButtonElement>) => mixed,
   ...
 };
 
 function Button({
-  children,
   theme = 'primary',
   type = 'submit',
+  className,
   ...extraProps
 }: Props) {
   return (
     <button
-      className={clsx(styles.root, styles[theme])}
       type={type}
+      className={clsx(styles.root, styles[theme], className)}
       {...extraProps}
-    >
-      {children}
-    </button>
+    />
   );
 }
 
