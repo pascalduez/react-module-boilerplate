@@ -1,10 +1,9 @@
 /**
- * [ES2018+]
+ * [ES2020+]
  * https://babeljs.io/docs/en/babel-preset-env
  * https://github.com/babel/preset-modules
  *
  * [Proposals]
- * https://babeljs.io/docs/en/babel-plugin-syntax-dynamic-import
  * https://babeljs.io/docs/en/babel-plugin-proposal-class-properties
  * https://babeljs.io/docs/en/babel-plugin-proposal-decorators
  *
@@ -30,7 +29,7 @@ module.exports = api => {
     helpers: true,
     regenerator: true,
     useESModules: true,
-    version: '7.6.0',
+    version: '7.8.0',
   };
 
   let presets = [
@@ -41,8 +40,6 @@ module.exports = api => {
 
   let plugins = [
     ['@babel/plugin-transform-runtime', runtimeOps],
-    '@babel/plugin-proposal-nullish-coalescing-operator',
-    '@babel/plugin-proposal-optional-chaining',
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-do-expressions',
   ];
