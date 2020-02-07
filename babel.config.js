@@ -15,10 +15,6 @@
  *
  * [Other]
  * https://babeljs.io/docs/en/babel-plugin-transform-runtime
- *
- * [CSS modules]
- * https://github.com/css-modules/css-modules
- * https://github.com/michalkvasnicak/babel-plugin-css-modules-transform
  */
 
 module.exports = api => {
@@ -46,12 +42,7 @@ module.exports = api => {
 
   if (env === 'test') {
     runtimeOps.useESModules = false;
-    plugins.push('@babel/plugin-transform-modules-commonjs', [
-      'babel-plugin-css-modules-transform',
-      {
-        generateScopedName: '[name]-[local]',
-      },
-    ]);
+    plugins.push('@babel/plugin-transform-modules-commonjs');
   }
 
   return {

@@ -63,5 +63,18 @@
         "peerDependencies": false
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/hooks/*.js",
+        "**/context/*.js",
+        "**/helpers/*.js",
+        "**/utils/*.js"
+      ],
+      "rules": {
+        "import/prefer-default-export": "off"
+      }
+    }
+  ]
 }

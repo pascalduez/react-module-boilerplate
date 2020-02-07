@@ -5,14 +5,16 @@ import flowEntry from 'rollup-plugin-flow-entry';
 import commonjs from 'rollup-plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
+import css from '@modular-css/rollup';
 import pkg from './package.json';
+import { namer } from './utils/namer';
 
 let plugins = [
   peerDepsExternal(),
-  postcss({
-    modules: true,
-    extract: `dist/${pkg.name}.css`,
+  css({
+    namer,
   }),
+  // postcss(),
   babel({
     exclude: ['node_modules/**'],
     runtimeHelpers: true,
@@ -22,6 +24,8 @@ let plugins = [
   sizeSnapshot(),
 ];
 
+let assetFileNames = `${pkg.name}.css`;
+
 export default {
   plugins,
   input: 'src/index.js',
@@ -30,15 +34,18 @@ export default {
       file: pkg.browser,
       name: pkg.name,
       format: 'umd',
+      assetFileNames,
     },
     {
       file: pkg.main,
       format: 'cjs',
       plugins: [flowEntry()],
+      assetFileNames,
     },
     {
       file: pkg.module,
       format: 'esm',
+      assetFileNames,
     },
   ],
 };

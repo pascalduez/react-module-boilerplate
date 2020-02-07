@@ -15,6 +15,9 @@ const config = {
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
   ],
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
+  },
 };
 
 if (env === 'ci') {
