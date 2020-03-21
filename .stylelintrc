@@ -6,6 +6,7 @@
   ],
   "plugins": ["stylelint-value-no-unknown-custom-properties", "stylelint-a11y"],
   "rules": {
+    "value-keyword-case": null,
     "csstools/value-no-unknown-custom-properties": [
       true,
       {
