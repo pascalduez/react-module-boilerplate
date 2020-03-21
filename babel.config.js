@@ -1,7 +1,6 @@
 /**
  * [ES2020+]
  * https://babeljs.io/docs/en/babel-preset-env
- * https://github.com/babel/preset-modules
  *
  * [Proposals]
  * https://babeljs.io/docs/en/babel-plugin-proposal-class-properties
@@ -24,16 +23,23 @@
 module.exports = api => {
   let env = api.env();
 
+  let envOps = {
+    targets: { 
+      esmodules: true,
+    },
+    bugfixes: true,
+  };
+
   let runtimeOps = {
     corejs: 2,
     helpers: true,
     regenerator: true,
     useESModules: true,
-    version: '7.8.0',
+    version: '7.9.0',
   };
 
   let presets = [
-    '@babel/preset-modules',
+    ['@babel/preset-env', envOps],
     '@babel/preset-react',
     '@babel/preset-flow',
   ];

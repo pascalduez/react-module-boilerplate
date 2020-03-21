@@ -14,7 +14,7 @@ Strive for keeping things simple and efficient.
 
 JS, ESnext
 
-- ES2018+ with `@babel/preset-env`, `@babel/preset-modules`
+- ES2018+ with `@babel/preset-env`
 - Ship both ESM, commonjs, UMD modules with Rollup
 
 Styling
