@@ -69,7 +69,6 @@
     "@babel/runtime-corejs2": "^7.9.2",
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
-    "@storybook/addon-options": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "@storybook/theming": "^5.3.18",

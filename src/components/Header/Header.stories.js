@@ -4,7 +4,10 @@ import * as React from 'react';
 
 import Header from './Header';
 
-export default { title: 'Header' };
+export default {
+  component: Header,
+  title: 'Header',
+};
 
 export const text = () => <Header title="Hello" />;
 
