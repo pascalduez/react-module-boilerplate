@@ -12,7 +12,7 @@ describe('<Header>', () => {
 
     const title = getByText('Test');
 
-    expect(container.firstChild.tagName).toBe('HEADER');
+    expect((container.firstChild: any).tagName).toBe('HEADER');
     expect(title.tagName).toBe('H1');
   });
 
