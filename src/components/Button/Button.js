@@ -8,14 +8,13 @@ import clsx from 'clsx';
 
 import styles from './Button.css';
 
-export type Props = {
+export type Props = {|
   children: React.Node,
   theme?: 'primary' | 'secondary' | 'danger',
   type?: 'submit' | 'button' | 'reset',
   className?: string,
   onClick?: (evt: SyntheticEvent<HTMLButtonElement>) => mixed,
-  ...
-};
+|};
 
 function Button({
   theme = 'primary',

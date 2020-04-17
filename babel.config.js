@@ -24,7 +24,7 @@ module.exports = api => {
   let env = api.env();
 
   let envOps = {
-    targets: { 
+    targets: {
       esmodules: true,
     },
     bugfixes: true,
@@ -40,7 +40,7 @@ module.exports = api => {
 
   let presets = [
     ['@babel/preset-env', envOps],
-    '@babel/preset-react',
+    ['@babel/preset-react', { runtime: 'automatic' }],
     '@babel/preset-flow',
   ];
 

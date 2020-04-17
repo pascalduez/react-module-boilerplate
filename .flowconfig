@@ -17,6 +17,7 @@ include_warnings=true
 esproposal.class_static_fields=enable
 esproposal.optional_chaining=enable
 esproposal.nullish_coalescing=enable
+react.runtime=automatic
 
 [strict]
 deprecated-type

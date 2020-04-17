@@ -5,11 +5,10 @@ import clsx from 'clsx';
 
 import styles from './Header.css';
 
-export type Props = {
+export type Props = {|
   title: string,
   className?: string,
-  ...
-};
+|};
 
 function Header({ title, className, ...extraProps }: Props) {
   return (
