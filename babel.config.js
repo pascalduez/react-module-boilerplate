@@ -40,7 +40,8 @@ module.exports = api => {
 
   let presets = [
     ['@babel/preset-env', envOps],
-    ['@babel/preset-react', { runtime: 'automatic' }],
+    // ['@babel/preset-react', { runtime: 'automatic' }],
+    '@babel/preset-react',
     '@babel/preset-flow',
   ];
 
