@@ -1,5 +1,5 @@
-// flow-typed signature: ad2d0bc0a9318f40368de6bfcc835d10
-// flow-typed version: d019b6ca90/@testing-library/react_v10.x.x/flow_>=v0.104.x
+// flow-typed signature: 97935120bcbddce95fe72effee644c7a
+// flow-typed version: 3d7fe31580/@testing-library/react_v11.x.x/flow_>=v0.104.x
 
 declare module '@testing-library/react' {
   // This type comes from
@@ -205,13 +205,31 @@ declare module '@testing-library/react' {
     eventProperties?: TInit
   ) => boolean;
 
+  declare type Screen<Queries = GetsAndQueries> = {
+    ...Queries,
+    debug: (
+      baseElement?:
+        | HTMLElement
+        | DocumentFragment
+        | Array<HTMLElement | DocumentFragment>,
+      maxLength?: number
+    ) => void,
+    ...
+  };
+
   declare type RenderResult<Queries = GetsAndQueries> = {
     ...Queries,
-    container: HTMLDivElement,
-    unmount: () => void,
+    container: HTMLElement,
+    unmount: () => boolean,
     baseElement: HTMLElement,
     asFragment: () => DocumentFragment,
-    debug: (baseElement?: HTMLElement) => void,
+    debug: (
+      baseElement?:
+        | HTMLElement
+        | DocumentFragment
+        | Array<HTMLElement | DocumentFragment>,
+      maxLength?: number
+    ) => void,
     rerender: (ui: React$Element<*>) => void,
     ...
   };
@@ -248,7 +266,7 @@ declare module '@testing-library/react' {
   declare export function cleanup(): void;
 
   declare export function waitFor<T>(
-    callback?: () => T,
+    callback: () => T,
     options?: {|
       container?: HTMLElement,
       timeout?: number,
@@ -257,18 +275,8 @@ declare module '@testing-library/react' {
     |}
   ): Promise<T>;
 
-  declare export function waitForElementToBeRemoved(
-    callback?: HTMLElement,
-    options?: {|
-      container?: HTMLElement,
-      timeout?: number,
-      interval?: number,
-      mutationObserverOptions?: MutationObserverInit,
-    |}
-  ): Promise<HTMLElement>;
-
   declare export function waitForElementToBeRemoved<T>(
-    callback?: () => T,
+    callback: (() => T) | T,
     options?: {|
       container?: HTMLElement,
       timeout?: number,
@@ -435,4 +443,6 @@ declare module '@testing-library/react' {
     text: TextMatch,
     options?: TextMatchOptions
   ): HTMLElement;
+  declare export function getNodeText(node: HTMLElement): string;
+  declare export var screen: Screen<>;
 }
