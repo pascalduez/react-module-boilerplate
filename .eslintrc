@@ -6,11 +6,12 @@
     "plugin:flowtype/recommended",
     "plugin:css-modules/recommended",
     "plugin:jest/recommended",
+    "plugin:testing-library/react",
     "prettier",
     "prettier/flowtype",
     "prettier/react"
   ],
-  "plugins": ["babel", "flowtype", "css-modules", "jest"],
+  "plugins": ["babel", "flowtype", "css-modules", "jest", "testing-library"],
   "env": {
     "jest": true
   },
