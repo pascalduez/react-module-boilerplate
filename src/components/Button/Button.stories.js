@@ -9,8 +9,8 @@ export default {
   title: 'Button',
 };
 
-export const primary = () => <Button>Test</Button>;
+export const primary = (): React.Node => <Button>Test</Button>;
 
-export const secondary = () => <Button theme="secondary">Test</Button>;
+export const secondary = (): React.Node => <Button theme="secondary">Test</Button>;
 
-export const danger = () => <Button theme="danger">Test</Button>;
+export const danger = (): React.Node => <Button theme="danger">Test</Button>;

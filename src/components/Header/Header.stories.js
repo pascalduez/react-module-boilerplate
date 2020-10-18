@@ -9,6 +9,6 @@ export default {
   title: 'Header',
 };
 
-export const text = () => <Header title="Hello" />;
+export const text = (): React.Node => <Header title="Hello" />;
 
-export const emoji = () => <Header title="😀 😎" />;
+export const emoji = (): React.Node => <Header title="😀 😎" />;

@@ -1,7 +1,6 @@
 /* @flow */
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['secondary', 'danger'] }] */
 
-import * as React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
 import Button from './Button';

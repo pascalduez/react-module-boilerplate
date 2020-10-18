@@ -1,6 +1,5 @@
 /* @flow */
 /* eslint css-modules/no-unused-class: [2, { markAsUsed: ['primary', 'secondary', 'danger'] }] */
-/* eslint react/default-props-match-prop-types: ['error', { 'allowRequiredDefaults': true }] */
 /* eslint-disable react/button-has-type */
 
 import * as React from 'react';
@@ -21,7 +20,7 @@ function Button({
   type = 'submit',
   className,
   ...extraProps
-}: Props) {
+}: Props): React.Element<'button'> {
   return (
     <button
       type={type}

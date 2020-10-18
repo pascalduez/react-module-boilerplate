@@ -10,7 +10,7 @@ export type Props = {|
   className?: string,
 |};
 
-function Header({ title, className, ...extraProps }: Props) {
+function Header({ title, className, ...extraProps }: Props): React.Element<'header'> {
   return (
     <header
       role="banner"
