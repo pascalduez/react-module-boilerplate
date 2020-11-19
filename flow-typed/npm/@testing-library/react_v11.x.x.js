@@ -1,5 +1,5 @@
-// flow-typed signature: 97935120bcbddce95fe72effee644c7a
-// flow-typed version: 3d7fe31580/@testing-library/react_v11.x.x/flow_>=v0.104.x
+// flow-typed signature: 22edda8a9d63305e5aed4cd94ee90e95
+// flow-typed version: 0663320449/@testing-library/react_v11.x.x/flow_>=v0.104.x
 
 declare module '@testing-library/react' {
   // This type comes from
@@ -97,12 +97,32 @@ declare module '@testing-library/react' {
      * If true includes elements in the query set that are usually excluded from
      * the accessibility tree. `role="none"` or `role="presentation"` are included
      * in either case.
-     * @default false
      */
     hidden?: boolean,
     /**
+     * If true only includes elements in the query set that are marked as
+     * selected in the accessibility tree, i.e., `aria-selected="true"`
+     */
+    selected?: boolean,
+    /**
+     * If true only includes elements in the query set that are marked as
+     * checked in the accessibility tree, i.e., `aria-checked="true"`
+     */
+    checked?: boolean,
+    /**
+     * If true only includes elements in the query set that are marked as
+     * pressed in the accessibility tree, i.e., `aria-pressed="true"`
+     */
+    pressed?: boolean,
+    /**
+     * Includes elements with the `"heading"` role matching the indicated level,
+     * either by the semantic HTML heading elements `<h1>-<h6>` or matching
+     * the `aria-level` attribute.
+     */
+    level?: number,
+    /**
      * Includes every role used in the `role` attribute
-     * For example *ByRole('progressbar', {queryFallbacks: true})` will find <div role="meter progresbar">`.
+     * For example *ByRole('progressbar', {queryFallbacks: true})` will find <div role="meter progressbar">`.
      */
     queryFallbacks?: boolean,
     /**
@@ -207,13 +227,23 @@ declare module '@testing-library/react' {
 
   declare type Screen<Queries = GetsAndQueries> = {
     ...Queries,
+    /**
+     * Convenience function for `pretty-dom` which also allows an array
+     * of elements
+     */
     debug: (
       baseElement?:
         | HTMLElement
         | DocumentFragment
         | Array<HTMLElement | DocumentFragment>,
-      maxLength?: number
+      maxLength?: number,
+      options?: { ... } // @TODO pretty format OptionsReceived
     ) => void,
+    /**
+     * Convenience function for `Testing Playground` which logs URL that
+     * can be opened in a browser
+     */
+    logTestingPlaygroundURL: (element?: Element | Document) => void,
     ...
   };
 
@@ -266,7 +296,7 @@ declare module '@testing-library/react' {
   declare export function cleanup(): void;
 
   declare export function waitFor<T>(
-    callback: () => T,
+    callback: () => T | Promise<T>,
     options?: {|
       container?: HTMLElement,
       timeout?: number,
@@ -285,7 +315,11 @@ declare module '@testing-library/react' {
     |}
   ): Promise<T>;
 
-  /* Deprecated */
+  /**
+   * @deprecated `wait` has been deprecated and replaced by `waitFor` instead.
+   * In most cases you should be able to find/replace `wait` with `waitFor`.
+   * Learn more: https://testing-library.com/docs/dom-testing-library/api-async#waitfor.
+   */
   declare export function wait(
     callback?: () => void,
     options?: {
@@ -295,7 +329,10 @@ declare module '@testing-library/react' {
     }
   ): Promise<void>;
 
-  /* Deprecated */
+  /**
+   * @deprecated `waitForDomChange` has been deprecated.
+   * Use `waitFor` instead: https://testing-library.com/docs/dom-testing-library/api-async#waitfor.
+   */
   declare export function waitForDomChange<T>(options?: {
     container?: HTMLElement,
     timeout?: number,
@@ -303,7 +340,11 @@ declare module '@testing-library/react' {
     ...
   }): Promise<T>;
 
-  /* Deprecated */
+  /**
+   * @deprecated `waitForElement` has been deprecated.
+   * Use a `find*` query (preferred: https://testing-library.com/docs/dom-testing-library/api-queries#findby)
+   * or use `waitFor` instead: https://testing-library.com/docs/dom-testing-library/api-async#waitfor
+   */
   declare export function waitForElement<T>(
     callback?: () => T,
     options?: {
